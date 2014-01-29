@@ -97,7 +97,7 @@ blockquote {
   overflow-y: scroll;
   width:25%;
   position: fixed;
-  padding: 20px;
+  padding: 3%;
 
   .home {
     color: white;
@@ -146,11 +146,10 @@ blockquote {
 }
 
 #notes {
-  padding: 50px;
+  padding: 5%;
   overflow-y: scroll;
   float: right;
-  //TODO: this is a hot mess
-  width: 60%;
+  width: 59%;
 }
 
 .lecture-header {

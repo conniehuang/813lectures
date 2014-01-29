@@ -71,7 +71,7 @@ blockquote {
   overflow-y: scroll;
   width: 25%;
   position: fixed;
-  padding: 20px; }
+  padding: 3%; }
   #sidebar .home {
     color: white;
     font-size: 1.5em;
@@ -102,10 +102,10 @@ blockquote {
       color: #606083; }
 
 #notes {
-  padding: 50px;
+  padding: 5%;
   overflow-y: scroll;
   float: right;
-  width: 60%; }
+  width: 59%; }
 
 .lecture-header {
   padding-bottom: 40px;
