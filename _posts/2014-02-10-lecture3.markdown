@@ -1,11 +1,11 @@
 ---
 layout: post
-lecture-number: 3
 title: Learnability, Part 2
 date: 2014-02-10 18:58:36
 categories: lecture
+
+lecture-number: 3
 lecturer: Philip Guo
-author: Rob Miller
 sections: [Consistency, Affordances, Feedback, Information scent]
 ---
 

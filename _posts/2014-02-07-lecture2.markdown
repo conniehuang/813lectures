@@ -1,11 +1,11 @@
 ---
 layout: post
-lecture-number: 2
 title: Learnability, Part 1
 date: 2014-02-07 18:58:36
 categories: lecture
+
+lecture-number: 2
 lecturer: Philip Guo
-author: Rob Miller
 sections: [Learning approaches, Interaction styles, Conceptual models]
 ---
 
