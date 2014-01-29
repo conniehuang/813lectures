@@ -5,7 +5,7 @@ date:   2014-02-05 18:58:36
 categories: lecture
 lecturer: David Karger
 author: Rob Miller
-sections: [UI Hall of Fame and Shame, Why UI Design is Hard, Definition of Usability]
+sections: [UI Hall of Fame and Shame, Why UI design is hard, Definition of usability, Course overview]
 ---
 
 <h2 id="ui-hall-of-fame-and-shame">UI Hall of Fame and Shame</h2>
@@ -130,8 +130,7 @@ Usability doesn't exist in isolation, of course, and it may not even be the most
 
 In this class, we'll take an extreme position: usability will be our primary goal. Here's a familiar UI design. You've probably used it before, but probably without thinking much about its usability. We're handing some out for you to play with and think about. 
 
-Course Overview
----------------------
+<h2 id="course-overview">Course Overview</h2>
 
 This course will be structured as four threads of lectures: design principles; design techniques; implementation techniques; and research methods. You have to gain experience in the first three in order to do your group project, which takes the entire semester, and the fourth is necessary for the 6.831 version of the course, which introduces graduate students to research in HCI. 
 
