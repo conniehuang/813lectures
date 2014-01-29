@@ -1,82 +1,82 @@
+body {
+  font-family: 'Whitney A', 'Whitney B', 'Segoe UI', 'Helvetica', 'Arial', sans-serif;
+  font-weight: 400;
+  font-size: 1.2em; }
+
 * {
   margin: 0;
-  padding: 0;
-}
+  padding: 0; }
 
-h1{
-  font-size:30px;
-}
+h1 {
+  /*font-size:30px;*/
+  margin-bottom: 1em; }
 
-h1 { margin-bottom: 1em;}
-p { margin: 1em 0; }
+p {
+  margin: 1em 0;
+  /*font-size: ;*/ }
 
-a         { color:#fff;
-            text-decoration:none; }
-a:hover   { color: #000; }
-a:visited { color: #fff; }
+a {
+  color: #fff;
+  text-decoration: none; }
+
+a:hover {
+  color: #000; }
+
+a:visited {
+  color: #fff; }
 
 blockquote {
   margin-left: 50px;
-  padding:2px 30px;
-  border-left: 3px solid #16CBB6;
-}
+  padding: 2px 30px;
+  border-left: 3px solid #16CBB6; }
 
 em {
-  color:#16CBB6;
-}
+  color: #16CBB6; }
 
 strong {
-  color:#16CBB6;
-}
+  color: #16CBB6; }
 
 #site {
-  font-size: 14px;
-  font-family: 'Open Sans', sans-serif;
+  /*font-size: 14px;*/
   line-height: 1.5em;
   margin: 0 auto;
-  width:85%;
-  padding: 100px 10px 10px 10px;
-}
+  width: 85%;
+  padding: 100px 10px 10px 10px; }
 
 .posts {
   list-style-type: none;
-  margin-bottom: 2em;
-}
+  margin-bottom: 2em; }
 
-#sidebar{
-  background-color:#373737;
-  color:#fff;
-  width:20%;
-  float:left;
-  margin-right:40px;
-  padding-bottom:200px;
-}
+#sidebar {
+  background-color: #373737;
+  color: #fff;
+  width: 20%;
+  /*TODO: MAKE RESPONSIVE*/
+  float: left;
+  margin-right: 40px;
+  padding-bottom: 200px; }
 
-#sidebar li{
-  font-family:"Avenir";
-  color:#16CBB6;
-  display:block;
-  padding:10px;
-  font-size:14px;
-  text-transform:uppercase;
-}
+#sidebar li {
+  color: #16CBB6;
+  display: block;
+  padding: 10px;
+  font-size: 14px;
+  /*text-transform:uppercase;*/ }
 
-#sidebar ul ul li{
-  font-size:70%;
-  color:#fff;
-  padding: 0px 0px 5px 40px;
-}
+#sidebar ul ul li {
+  /*font-size:70%;*/
+  color: #fff;
+  padding: 0px 0px 5px 40px; }
 
-#sidebar-home{
+/*#sidebar-home{
   color:#fff;
   margin-bottom:30px;
   text-align:right;
   padding: 100px 10px 0px 10px;
   letter-spacing: 10px;
-  font-family:"Avenir";
 }
 
 .post{
   width:75%;
   float:left;
-}
+}*/
