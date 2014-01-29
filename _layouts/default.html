@@ -6,15 +6,10 @@
   <title>{{ page.title }}</title>
   <meta name="viewport" content="width=device-width">
 
-  <!-- syntax highlighting CSS -->
   <link rel="stylesheet" href="/css/syntax.css">
-
-  <!-- Custom CSS -->
   <link rel="stylesheet" href="/css/main.css">
 
   <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
-
-
 </head>
 <body>
 
@@ -23,8 +18,11 @@
       <div id="sidebar-home">6.813</div>
     </a>
         {% for post in site.posts reversed %}
-      <li><span>{{ post.date | date_to_string }}</span>
-        <br/><a href="{{ post.url }}">{{ post.title }}</a></li>
+      <li>
+        <span>{{ post.date | date_to_string }}</span>
+        <br/>
+        <a href="{{ post.url }}">{{ post.title }}</a>
+      </li>
     {% endfor %}
 
   <!--   <ul>
