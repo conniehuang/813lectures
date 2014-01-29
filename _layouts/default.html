@@ -9,7 +9,9 @@
   <link rel="stylesheet" href="/css/syntax.css">
   <link rel="stylesheet" href="/css/main.css">
 
-  <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+  <!-- <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'> -->
+
+  <link rel="stylesheet" type="text/css" href="//cloud.typography.com/7076232/641364/css/fonts.css" />
 </head>
 <body>
 
@@ -17,43 +19,19 @@
     <a class="extra" href="/">
       <div id="sidebar-home">6.813</div>
     </a>
-        {% for post in site.posts reversed %}
-      <li>
-        <span>{{ post.date | date_to_string }}</span>
-        <br/>
-        <a href="{{ post.url }}">{{ post.title }}</a>
-      </li>
-    {% endfor %}
-
-  <!--   <ul>
-      <li>1. usability</li>
-        <ul>
-          <li>UI Hall of Fame and Shame</li>
-          <li>Why UI Design is Hard</li>
-          <li>Usability, Defined</li>
-          <li>Course Overview</li>
-        </ul>
-      <li>2. learnability</li>
-      <li>3. Learnability</li>
-      <li>4. efficiency</li>
-      <li>5. safety</li>
-      <li>6. ui software architecture</li>
-      <li>7. user-centered design</li>
-      <li>8. output</li>
-      <li>9. input</li>
-      <li>10. prototyping</li>
-      <li>11. user testing</li>
-      <li>12. experiment design</li>
-      <li>13. experiment analysis</li>
-      <li>14. graphic design</li>
-      <li>15. layout</li>
-      <li>16. color</li>
-      <li>17. typography</li>
-      <li>18. accessibility</li>
-      <li>19. internationalization</li>
-      <li>20. heuristic evaluation</li>
-      <li>21. conclusion</li>
-    </ul> -->
+    <ul>
+      {% for post in site.posts reversed %}
+            <li>{{ post.date | date_to_string }}</li>
+            <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+            <ul>
+              {% for section in post.sections %}
+                {% assign section-split = section | split: ' ' %}
+                {% assign section-url = section-split | join: '-' %}
+                <li><a href="{{ post.url }}#{{ section-url | downcase }}">{{ section }}</a></li>
+              {% endfor %}
+            </ul>
+      {% endfor %}
+    </ul>
   </div>
 
   <div id="site">

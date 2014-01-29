@@ -3,6 +3,9 @@ layout: post
 title:  "2. Learnability"
 date:   2014-02-07 18:58:36
 categories: lecture
+lecturer: David Karger
+author: Rob Miller
+sections: [Learning approaches, Interaction styles, Conceptual models]
 ---
 
 Learnability

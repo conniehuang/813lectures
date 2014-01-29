@@ -3,6 +3,9 @@ layout: post
 title:  "3. Learnability"
 date:   2014-02-10 18:58:36
 categories: lecture
+lecturer: David Karger
+author: Rob Miller
+sections: [Consistency, Affordances, Feedback, Information scent]
 ---
 
 Learnability

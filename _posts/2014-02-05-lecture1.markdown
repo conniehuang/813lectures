@@ -3,10 +3,10 @@ layout: post
 title:  "1. Usability"
 date:   2014-02-05 18:58:36
 categories: lecture
+lecturer: David Karger
+author: Rob Miller
+sections: [UI Hall of Fame and Shame, Why UI Design is Hard, Definition of Usability, Course Overview]
 ---
-
-Usability
-====================
 
 UI Hall of Fame and Shame
 ---------------------
