@@ -1,7 +1,8 @@
 ---
 layout: post
-title:  "2. Learnability"
-date:   2014-02-07 18:58:36
+lecture-number: 2
+title: Learnability, Part 1
+date: 2014-02-07 18:58:36
 categories: lecture
 lecturer: Philip Guo
 author: Rob Miller

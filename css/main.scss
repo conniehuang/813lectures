@@ -1,7 +1,15 @@
 $text-color: rgb(55, 55, 60);
 $teal: #16CBB6;
+$gray: rgb(180, 180, 200);
+$sidebar: rgb(40, 40, 50);
 
-body{
+@mixin state-transition {
+  transition: all .5s;
+  -webkit-transition: all .5s;
+}
+
+
+body {
   font-family: 'Whitney A', 'Whitney B', 'Segoe UI', 'Helvetica', 'Arial', sans-serif;
   font-weight: 400;
   font-size: 1.2em;
@@ -14,21 +22,63 @@ body{
   padding: 0;
 }
 
-h1{
-  /*font-size:30px;*/
-  margin-bottom: 1em;
+h1 {
+  font-size: 2em;
+  line-height: 2.3em;
+}
+
+h2 {
+  font-size: 1.5em;
+  line-height: 1.8em;
+  margin-top: 40px;
+}
+
+h3 {
+  font-size: 1.1em;
 }
 
 p {
   margin: 1em 0;
-
-  /*font-size: ;*/
 }
 
-a { color:#fff;
-  text-decoration:none; }
-a:hover   { color: #000; }
-a:visited { color: #fff; }
+a {
+  color: inherit;
+  border-bottom: 1px solid $teal;
+  text-decoration: none;
+  @include state-transition;
+
+  /* TODO: visited links */
+
+  &:hover {
+    color: $teal;
+    border-bottom: 1px solid $teal;
+  }
+}
+
+.smallcaps {
+  font-family: 'Whitney SC A', 'Whitney SC B';
+}
+
+a.button {
+  color: #fff;
+  background-color: $gray;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-family: 'Whitney SC A', 'Whitney SC B';
+  font-weight: 400;
+  float: right;
+  margin: 20px 0;
+  border-bottom: 2px solid darken($gray, 10%);
+  @include state-transition;
+
+  &:hover {
+    background-color: $teal;
+    border-bottom: 2px solid darken($teal, 10%);
+  }
+
+  i { margin-right: 10px; }
+
+}
 
 blockquote {
   margin-left: 50px;
@@ -36,70 +86,80 @@ blockquote {
   border-left: 3px solid $teal;
 }
 
-em {
-  color: $teal;
-}
-
-strong {
-  color: $teal;
-}
-
 .posts {
   list-style-type: none;
   margin-bottom: 2em;
 }
 
-#sidebar{
-  background-color:#373737;
+#sidebar {
+  background-color: $sidebar; 
   overflow-y: scroll;
-  color:#fff;
-  width:20%;
-  /*TODO: MAKE RESPONSIVE*/;
-  /*float:left;*/
+  width:25%;
   position: fixed;
-  /*padding: ;*/
+  padding: 20px;
+
+  .home {
+    color: white;
+    font-size: 1.5em;
+    font-weight: 600;
+    text-align: center;
+  }
+
+  a { 
+    border-bottom: none;
+    /* TODO: add visited link state*/
+    &:hover {
+      color: darken($teal, 10%);
+      /* TODO: change link hover color for gray links */
+    }
+  }
 
   li {
     color: $teal;
     display:block;
     padding:10px;
-    font-size:14px;
-  }
+    font-size: 0.9em;
 
-  ul {
-    li {
-      overflow: hidden;
-      .lecture-name{
-        float: left;
-      }
-      .date{
-        float: right;
-      }
-
+    &.lecture {
+      margin-top: 20px;
     }
-    ul {
-      li {
-        color:#fff;
-        padding: 0px 0px 5px 40px;
-      }
-    }
-  }
 
+    &.lecture-section {
+      color: $gray;
+      padding: 0px 0px 0px 40px; 
+      font-size: 0.8em;
+    }
+
+    .lecture-name {
+      float: left;
+    }
+
+    .date {
+      font-family: 'Whitney SC A', 'Whitney SC B';
+      float: right;
+      color: darken($gray, 30%);
+    }
+
+  }
 
 }
 
-#notes{
-  padding: 100px 50px;
+#notes {
+  padding: 50px;
   overflow-y: scroll;
   float: right;
   //TODO: this is a hot mess
-  width: 70%;
+  width: 60%;
 }
 
-/*#sidebar-home{
-  color:#fff;
-  margin-bottom:30px;
-  text-align:right;
-  padding: 100px 10px 0px 10px;
-  letter-spacing: 10px;
-}*/
+.lecture-header {
+  padding-bottom: 40px;
+  border-bottom: 1px solid $gray;
+  h3 {
+    font-family: 'Whitney SC A', 'Whitney SC B';
+    color: $gray;
+    .lecture-date {
+      float: right;
+    }
+  }
+}

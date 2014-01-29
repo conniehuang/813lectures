@@ -1,11 +1,13 @@
 ---
 layout: post
-title:  "1. Usability"
-date:   2014-02-05 18:58:36
+lecture-number: 1
+title: Usability
+date: 2014-02-05 18:58:36
 categories: lecture
 lecturer: David Karger & Daniel Jackson
 author: Rob Miller
 sections: [UI Hall of Fame and Shame, Why UI design is hard, Definition of usability, Course overview]
+pdf: 
 ---
 
 <h2 id="ui-hall-of-fame-and-shame">UI Hall of Fame and Shame</h2>
@@ -110,7 +112,6 @@ Another example: Google has discovered that when they survey users about how man
 It's easy to say, "Yeah, the interface is bad, but users can customize it however they want it." There are two problems with this statement: (1) most users don't, and (2) user customizations may be even worse! One study of command abbreviations found that users made twice as many errors with their own command abbreviations than with a carefully-designed set (Grudin & Barnard, "When does an abbreviation become a word?", CHI '85). So customization isn't the silver bullet. 
 
 <h2 id="definition-of-usability">Usability, Defined</h2>
-------------------
 
 The property we're concerned with here, usability, is more precise than just how "good" the system is. A system can be good or bad in many ways. 
 

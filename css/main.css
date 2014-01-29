@@ -10,72 +10,107 @@ body {
   padding: 0; }
 
 h1 {
-  /*font-size:30px;*/
-  margin-bottom: 1em; }
+  font-size: 2em;
+  line-height: 2.3em; }
+
+h2 {
+  font-size: 1.5em;
+  line-height: 1.8em;
+  margin-top: 40px; }
+
+h3 {
+  font-size: 1.1em; }
 
 p {
-  margin: 1em 0;
-  /*font-size: ;*/ }
+  margin: 1em 0; }
 
 a {
+  color: inherit;
+  border-bottom: 1px solid #16cbb6;
+  text-decoration: none;
+  transition: all .5s;
+  -webkit-transition: all .5s;
+  /* TODO: visited links */ }
+  a:hover {
+    color: #16cbb6;
+    border-bottom: 1px solid #16cbb6; }
+
+.smallcaps {
+  font-family: 'Whitney SC A', 'Whitney SC B'; }
+
+a.button {
   color: #fff;
-  text-decoration: none; }
-
-a:hover {
-  color: #000; }
-
-a:visited {
-  color: #fff; }
+  background-color: #b4b4c8;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-family: 'Whitney SC A', 'Whitney SC B';
+  font-weight: 400;
+  float: right;
+  margin: 20px 0;
+  border-bottom: 2px solid #9797b2;
+  transition: all .5s;
+  -webkit-transition: all .5s; }
+  a.button:hover {
+    background-color: #16cbb6;
+    border-bottom: 2px solid #119d8d; }
+  a.button i {
+    margin-right: 10px; }
 
 blockquote {
   margin-left: 50px;
   padding: 2px 30px;
   border-left: 3px solid #16cbb6; }
 
-em {
-  color: #16cbb6; }
-
-strong {
-  color: #16cbb6; }
-
 .posts {
   list-style-type: none;
   margin-bottom: 2em; }
 
 #sidebar {
-  background-color: #373737;
+  background-color: #282832;
   overflow-y: scroll;
-  color: #fff;
-  width: 20%;
-  /*TODO: MAKE RESPONSIVE*/
-  /*float:left;*/
+  width: 25%;
   position: fixed;
-  /*padding: ;*/ }
+  padding: 20px; }
+  #sidebar .home {
+    color: white;
+    font-size: 1.5em;
+    font-weight: 600;
+    text-align: center; }
+  #sidebar a {
+    border-bottom: none;
+    /* TODO: add visited link state*/ }
+    #sidebar a:hover {
+      color: #119d8d;
+      /* TODO: change link hover color for gray links */ }
   #sidebar li {
     color: #16cbb6;
     display: block;
     padding: 10px;
-    font-size: 14px; }
-  #sidebar ul li {
-    overflow: hidden; }
-    #sidebar ul li .lecture-name {
+    font-size: 0.9em; }
+    #sidebar li.lecture {
+      margin-top: 20px; }
+    #sidebar li.lecture-section {
+      color: #b4b4c8;
+      padding: 0px 0px 0px 40px;
+      font-size: 0.8em; }
+    #sidebar li .lecture-name {
       float: left; }
-    #sidebar ul li .date {
-      float: right; }
-  #sidebar ul ul li {
-    color: #fff;
-    padding: 0px 0px 5px 40px; }
+    #sidebar li .date {
+      font-family: 'Whitney SC A', 'Whitney SC B';
+      float: right;
+      color: #606083; }
 
 #notes {
-  padding: 100px 50px;
+  padding: 50px;
   overflow-y: scroll;
   float: right;
-  width: 70%; }
+  width: 60%; }
 
-/*#sidebar-home{
-  color:#fff;
-  margin-bottom:30px;
-  text-align:right;
-  padding: 100px 10px 0px 10px;
-  letter-spacing: 10px;
-}*/
+.lecture-header {
+  padding-bottom: 40px;
+  border-bottom: 1px solid #b4b4c8; }
+  .lecture-header h3 {
+    font-family: 'Whitney SC A', 'Whitney SC B';
+    color: #b4b4c8; }
+    .lecture-header h3 .lecture-date {
+      float: right; }

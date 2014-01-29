@@ -1,7 +1,8 @@
 ---
 layout: post
-title:  "3. Learnability"
-date:   2014-02-10 18:58:36
+lecture-number: 3
+title: Learnability, Part 2
+date: 2014-02-10 18:58:36
 categories: lecture
 lecturer: Philip Guo
 author: Rob Miller
@@ -10,7 +11,7 @@ sections: [Consistency, Affordances, Feedback, Information scent]
 
 Learning Approaches
 ---------------------
-This Flash-driven web site is the Museum of Modern Art’s Workspheres exhibition (http://www.moma.org/ exhibitions/2001/workspheres/), a collection of objects related to the modern workplace. This is its main menu. Mousing over any icon makes its label appear (the yellow note shown), and clicking brings up a picture of the object.
+This Flash-driven web site is the [Museum of Modern Art’s Workspheres exhibition](http://www.moma.org/ exhibitions/2001/workspheres/), a collection of objects related to the modern workplace. This is its main menu. Mousing over any icon makes its label appear (the yellow note shown), and clicking brings up a picture of the object.
 
 Go to the site and play with it, and we’ll talk about its learnability in class. Here are some things to think about: - what real-world metaphor is used by this interface? - how well does it do with knowledge in the head vs. knowledge in the world?
 

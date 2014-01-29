@@ -1,7 +1,12 @@
 ---
 layout: default
 ---
-<h1>Lecture {{ page.title }}</h1>
+<section class="lecture-header">
+  <h3><span>Lecture {{ page.lecture-number }}</span> <span class="lecture-date">{{ page.date | date: '%b %-d, %Y' }}</span></h3>
+  <a href="{{ pdf }}" class="button"><i class="fa fa-download"></i> Download PDF</a>
+  <h1>{{ page.title }}</h1>
+  <h3 class="smallcaps">Lecturer: {{ page.lecturer }}</h3>
+</section>
 
 <div class="post">
   {{ content }}
