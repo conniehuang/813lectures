@@ -8,9 +8,6 @@ author: Rob Miller
 sections: [Consistency, Affordances, Feedback, Information scent]
 ---
 
-Learnability
-====================
-
 Learning Approaches
 ---------------------
 This Flash-driven web site is the Museum of Modern Art’s Workspheres exhibition (http://www.moma.org/ exhibitions/2001/workspheres/), a collection of objects related to the modern workplace. This is its main menu. Mousing over any icon makes its label appear (the yellow note shown), and clicking brings up a picture of the object.

@@ -5,11 +5,10 @@ date:   2014-02-05 18:58:36
 categories: lecture
 lecturer: David Karger
 author: Rob Miller
-sections: [UI Hall of Fame and Shame, Why UI Design is Hard, Definition of Usability, Course Overview]
+sections: [UI Hall of Fame and Shame, Why UI Design is Hard, Definition of Usability]
 ---
 
-UI Hall of Fame and Shame
----------------------
+<h2 id="ui-hall-of-fame-and-shame">UI Hall of Fame and Shame</h2>
 
 Slapping a pretty window interface on a program does not automatically confer usability on it. This example shows why. 
 
@@ -54,8 +53,7 @@ So how is the time actually changed? By clicking mouse buttons: clicking the lef
 
 Perhaps the worst part of this example is that it's not a result of laziness. Somebody went to a lot of effort to draw that clock face with hands. If only they'd spent some of that time thinking about usability instead.
 
-Why UI Design is Hard
----------------------
+<h2 id="why-ui-design-is-hard">Why UI Design is Hard</h2>
 
 Gimp is an open-source image editing program, comparable to Adobe Photoshop. Gimp's designers made a strange choice for its menus. Gimp windows have no menu bar. Instead, all Gimp menus are accessed from a context menu, which pops up on right-click. 
 
@@ -111,8 +109,8 @@ Another example: Google has discovered that when they survey users about how man
 
 It's easy to say, "Yeah, the interface is bad, but users can customize it however they want it." There are two problems with this statement: (1) most users don't, and (2) user customizations may be even worse! One study of command abbreviations found that users made twice as many errors with their own command abbreviations than with a carefully-designed set (Grudin & Barnard, "When does an abbreviation become a word?", CHI '85). So customization isn't the silver bullet. 
 
-Usability, Defined
----------------------
+<h2 id="definition-of-usability">Usability, Defined</h2>
+------------------
 
 The property we're concerned with here, usability, is more precise than just how "good" the system is. A system can be good or bad in many ways. 
 

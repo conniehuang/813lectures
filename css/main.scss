@@ -1,7 +1,12 @@
+$text-color: rgb(55, 55, 60);
+$teal: #16CBB6;
+
 body{
   font-family: 'Whitney A', 'Whitney B', 'Segoe UI', 'Helvetica', 'Arial', sans-serif;
   font-weight: 400;
   font-size: 1.2em;
+  line-height: 1.5em;
+  color: $text-color;
 }
 
 * {
@@ -16,6 +21,7 @@ h1{
 
 p {
   margin: 1em 0;
+
   /*font-size: ;*/
 }
 
@@ -27,23 +33,15 @@ a:visited { color: #fff; }
 blockquote {
   margin-left: 50px;
   padding:2px 30px;
-  border-left: 3px solid #16CBB6;
+  border-left: 3px solid $teal;
 }
 
 em {
-  color:#16CBB6;
+  color: $teal;
 }
 
 strong {
-  color:#16CBB6;
-}
-
-#site {
-  /*font-size: 14px;*/
-  line-height: 1.5em;
-  margin: 0 auto;
-  width:85%;
-  padding: 100px 10px 10px 10px;
+  color: $teal;
 }
 
 .posts {
@@ -53,26 +51,49 @@ strong {
 
 #sidebar{
   background-color:#373737;
+  overflow-y: scroll;
   color:#fff;
   width:20%;
   /*TODO: MAKE RESPONSIVE*/;
-  float:left;
-  margin-right:40px;
-  padding-bottom:200px;
+  /*float:left;*/
+  position: fixed;
+  /*padding: ;*/
+
+  li {
+    color: $teal;
+    display:block;
+    padding:10px;
+    font-size:14px;
+  }
+
+  ul {
+    li {
+      overflow: hidden;
+      .lecture-name{
+        float: left;
+      }
+      .date{
+        float: right;
+      }
+
+    }
+    ul {
+      li {
+        color:#fff;
+        padding: 0px 0px 5px 40px;
+      }
+    }
+  }
+
+
 }
 
-#sidebar li{
-  color:#16CBB6;
-  display:block;
-  padding:10px;
-  font-size:14px;
-  /*text-transform:uppercase;*/
-}
-
-#sidebar ul ul li{
-  /*font-size:70%;*/
-  color:#fff;
-  padding: 0px 0px 5px 40px;
+#notes{
+  padding: 100px 50px;
+  overflow-y: scroll;
+  float: right;
+  //TODO: this is a hot mess
+  width: 70%;
 }
 
 /*#sidebar-home{
@@ -81,9 +102,4 @@ strong {
   text-align:right;
   padding: 100px 10px 0px 10px;
   letter-spacing: 10px;
-}
-
-.post{
-  width:75%;
-  float:left;
 }*/

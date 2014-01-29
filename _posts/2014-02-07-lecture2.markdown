@@ -8,9 +8,6 @@ author: Rob Miller
 sections: [Learning approaches, Interaction styles, Conceptual models]
 ---
 
-Learnability
-====================
-
 Learning Approaches
 ---------------------
 IBM’s RealCD is CD player software, which allows you to play an audio CD in your CD-ROM drive.
