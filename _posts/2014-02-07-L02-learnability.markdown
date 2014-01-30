@@ -111,7 +111,9 @@ Since recognition is so much easier than recall, this means that MF and DM is mu
 
 Error messages: CL, MF, and SD often have error messages (e.g. “you didn’t enter a phone number”), but DM rarely needs error messages. There’s no error message when you drag a scrollbar too far, for example; the scrollbar thumb simply stops, and the visual constraints of the scrollbar make it obvious why it stopped.
 
-Efficiency: Experts can be very efficient with CL, since they don’t need to wait for and visually scan system prompts, and many CL systems have command histories and scripting facilities that allow commands to be reused rather than constantly retyped. Efficient performance with MF interfaces demands good shortcuts (e.g. keyboard shortcuts, tabbing between form fields, typeahead). Efficient performance with DMs is possible when the DM is appropriate to the task; but using DM for a task it isn’t well-suited for may feel like manual labor with a mouse.
+Efficiency: Experts can be very efficient with CL, since they don’t need to wait for and visually scan system prompts, and many CL systems have command histories and scripting facilities that allow commands to be reused rather than constantly retyped.
+
+Efficient performance with MF interfaces demands good shortcuts (e.g. keyboard shortcuts, tabbing between form fields, typeahead). Efficient performance with DMs is possible when the DM is appropriate to the task; but using DM for a task it isn’t well-suited for may feel like manual labor with a mouse.
 
 User type: CL is generally better for expert users, who keep their knowledge active and who are willing to invest in training and learning in exchange for greater efficiency. MF, DM, and SD are generally better for novices and infrequent users.
 Synchrony: Command languages are synchronous (first the user types a complete command, then the system does it). So are menu systems and forms; e.g., you fill out a web form, and then you submit it. Speech requires turn-taking between the system and user, so it’s synchronous as well. DM, on the other hand, is asynchronous: the user can point the mouse anywhere and do anything at any time. DM interfaces are necessarily event driven.
@@ -126,6 +128,7 @@ Conceptual Models
 ---------------------
 
 Self-disclosure is a technique for making a command language more visible, helping the user learn the available commands and syntax. Self-disclosure is useful for interfaces that have both a traditional GUI (with menus and forms and possibly direct manipulation) as well as a command language (for scripting). When the user issues a command in the GUI part, the interface also displays the command in the command language that corresponds to what they did. A primitive form of self-disclosure is the address bar in a web browser—when you click on a hyperlink, the system displays to you the URL that you could have typed in order to visit the page. A more sophisticated kind of self-disclosure happens in Excel: when you choose the sum function from the toolbar, and drag out a range of cells to be summed, Excel shows you how you could have typed the formula instead. (Notice that Excel also uses a tooltip, to make the syntax of the formula more visible.)
+
 On the bottom is another example of self-disclosure: Google’s Advanced Search form, which allows the user to specify search options by selecting them from menus, the results of which are also displayed as a commandbased query ("microsoft windows” "operating system" OR OS –glass –washing site:microsoft.com) which can be entered on the main search page. (example suggested by Geza Kovacs) 23
 
 To help you check your understanding and prepare for the nanoquiz in class, the lecture notes include a “picoquiz” question after every section. The picoquiz questions are similar to the nanoquiz questions you can expect to see in class, but you can check your answers yourself.
@@ -142,9 +145,9 @@ For example, at a high level, the model of Twitter is that there are other users
 
 There are actually several models you have to worry about in UI design:
 
-* The system model (sometimes called implementation model) is how the system actually works.
-* The interface model (or manifest model) is the model that the system presents to the user through its user interface.
-* The user model (or conceptual model) is how the user thinks the system works.
+*   The system model (sometimes called implementation model) is how the system actually works.
+*   The interface model (or manifest model) is the model that the system presents to the user through its user interface.
+*   The user model (or conceptual model) is how the user thinks the system works.
 
 A cell phone presents the same simple interface model as a conventional wired phone, even though its system model is quite a bit more complex. A cell phone conversation may be handed off from one cell tower to another as the user moves around. This detail of the system model is hidden from the user.
 
@@ -168,11 +171,13 @@ Consider image editing software. Programs like Photoshop and Gimp use a pixel ed
 
 Similarly, most modern text editors model a text file as a single string, in which line endings are just like other characters. But it doesn’t have to be this way. Some editors represent a text file as a list of lines instead.
 
-When this implementation model is exposed in the user interface, as in old Unix text editors like ed, line endings can’t be deleted in the same way as other characters. ed has a special join command for deleting line endings. text editor: one-dimensional sequence of characters; cursor is an insertion point typewriter: two-dimensional page; cursor is a rectangle on the page different effects of space, return, backspace 
+When this implementation model is exposed in the user interface, as in old Unix text editors like ed, line endings can’t be deleted in the same way as other characters. ed has a special join command for deleting line endings. 
+
+text editor: one-dimensional sequence of characters; cursor is an insertion point typewriter: two-dimensional page; cursor is a rectangle on the page different effects of space, return, backspace.
 
 The user’s model may be totally wrong without affecting the user’s ability to use the system. A popular misconception about electricity holds that plugging in a power cable is like plugging in a water hose, with electrons traveling from the power company through the cable into the appliance. The actual system model of household AC current is of course completely different: the current changes direction many times a second, and the actual electrons don’t move far, and there’s really a circuit in that cable, not just a one-way tube. But the user model is simple, and the interface model supports it: plug in this tube, and power flows to the appliance.
 
-But a wrong user model can lead to problems, as well. Consider a household thermostat, which controls the temperature of a room. If the room is too cold, what’s the fastest way to bring it up to the desired temperature?
+But a wrong user model can also lead to problems. Consider a household thermostat, which controls the temperature of a room. If the room is too cold, what’s the fastest way to bring it up to the desired temperature?
 
 Some people would say the room will heat faster if the thermostat is turned all the way up to maximum temperature. This response is triggered by an incorrect mental model about how a thermostat works: either the timer model, in which the thermostat controls the duty cycle of the furnace, i.e. what fraction of time the furnace is running and what fraction it is off; or the valve model, in which the thermostat affects the amount of heat coming from the furnace. In fact, a thermostat is just an on-off switch at the set temperature. When the room is colder than the set temperature, the furnace runs full blast until the room warms up. A higher thermostat setting will not make the room warm up any faster. (Norman, Design of Everyday Things, 1988)
 

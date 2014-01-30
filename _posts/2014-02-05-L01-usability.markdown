@@ -25,7 +25,7 @@ The first clue that there might be a problem here is the long help message on th
 
 Each position on the scrollbar represents a template, and moving the scrollbar back and forth changes the template shown. 
 
-This is a cute but bad use of a scrollbar. Notice that the scrollbar doesn't have any marks on it. How many templates are there? How are they sorted? How far do you have to move the scrollbar to select the next one? You can't even guess from this interface.
+This is a cute but poor use of a scrollbar. Notice that the scrollbar doesn't have any marks on it. How many templates are there? How are they sorted? How far do you have to move the scrollbar to select the next one? You can't even guess from this interface.
 
 Normally, a horizontal scrollbar underneath an image (or document, or some other content) is designed for scrolling the content horizontally. A new or infrequent user looking at the window sees the scrollbar, assumes it serves that function, and ignores it. Inconsistency with prior experience and other applications tends to trip up new or infrequent users. 
 
