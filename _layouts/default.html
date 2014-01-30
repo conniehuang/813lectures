@@ -6,8 +6,8 @@
   <title>{{ page.title }}</title>
   <meta name="viewport" content="width=device-width">
 
-  <link rel="stylesheet" href="/css/syntax.css">
-  <link rel="stylesheet" href="/css/main.css">
+  <link rel="stylesheet" href="{{ site.baseurl }}/css/syntax.css">
+  <link rel="stylesheet" href="{{ site.baseurl }}/css/main.css">
 
   <link rel="stylesheet" type="text/css" href="//cloud.typography.com/7076232/641364/css/fonts.css" />
 
@@ -19,12 +19,12 @@
     <a class="home" href="/"> 6.813 / 6.831 </a>
     <ul>
       {% for post in site.posts reversed %}
-        <li class="lecture"><span class="lecture-title"><a href="{{ post.url }}">{{ post.lecture-number }}. {{ post.title }}</a> <span class="date">{{ post.date | date: '%b %-d' }}</span></li>
+        <li class="lecture"><span class="lecture-title"><a href="{{ site.baseurl }}{{ post.url }}">{{ post.lecture-number }}. {{ post.title }}</a> <span class="date">{{ post.date | date: '%b %-d' }}</span></li>
         <ul>
           {% for section in post.sections %}
             {% assign section-split = section | split: ' ' %}
             {% assign section-url = section-split | join: '-' %}
-            <li class="lecture-section"><a href="{{ post.url }}#{{ section-url | downcase }}">{{ section }}</a></li>
+            <li class="lecture-section"><a href="{{ site.baseurl }}{{ post.url }}#{{ section-url | downcase }}">{{ section }}</a></li>
           {% endfor %}
         </ul>
       {% endfor %}
