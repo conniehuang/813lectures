@@ -70,7 +70,7 @@ But Consistency in Wording argued for only one command name, lest the user wonde
 
 To answer the picoquiz questions in this lecture, go to: http://courses.csail.mit.edu/6.831/2013/picoquiz?lectureId=3
 
-*Affordance* refers to “the perceived and actual properties of a thing”, primarily the properties that determine how the thing could be operated. Chairs have properties that make them suitable for sitting; doorknobs are the right size and shape for a hand to grasp and turn. A button’s properties say “push me with your finger.”
+**Affordance** refers to “the perceived and actual properties of a thing”, primarily the properties that determine how the thing could be operated. Chairs have properties that make them suitable for sitting; doorknobs are the right size and shape for a hand to grasp and turn. A button’s properties say “push me with your finger.”
 
 Scrollbars say that they continuously scroll or pan something that you can’t entirely see. Affordances are how an interface communicates nonverbally, telling you how to operate it.
 

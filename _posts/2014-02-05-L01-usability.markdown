@@ -17,7 +17,7 @@ Slapping a pretty window interface on a program does not automatically confer us
 > Usability is about creating effective user interfaces (UIs). 
 
 This dialog box, which appeared in a program that prints custom award certificates, presents the task of selecting a template for the certificate. 
-This interface is clearly graphical. It's mouse-driven - no memorizing or typing complicated commands. It's even what-you-see-is-what-you-get (WYSIWYG) - the user gets a preview of the award that will be created. 
+This interface is clearly graphical. It's mouse-driven—no memorizing or typing complicated commands. It's even what-you-see-is-what-you-get (WYSIWYG)—the user gets a preview of the award that will be created. 
 
 So why isn't it usable? 
 
@@ -37,7 +37,7 @@ But the dialog doesn't get any better for frequent users, either. If a frequent 
 
 Even the help text has usability problems. "Press OKAY"? Where is that? And why does the message have a ragged left margin? You don't see ragged left too often in newspapers and magazine layout, and there's a good reason. 
 
-On the plus side, the designer of this dialog box at least recognized that there was a problem - hence the help message. But the help message is indicative of a flawed approach to usability. 
+On the plus side, the designer of this dialog box at least recognized that there was a problem—hence the help message. But the help message is indicative of a flawed approach to usability. 
 
 > Usability can't be left until the end of software development, like package artwork or an installer. It can't be patched here and there with extra messages or more documentation. It must be part of the process, so that usability bugs can be fixed, instead of merely patched. 
 
@@ -77,11 +77,11 @@ Worse, it's not an easy error to undo. (Pressing Ctrl-Z, the conventional undo s
 Gimp's designers had a terrific idea here—making it easy to assign keyboard shortcuts by just pointing at the menu item you want to change and pressing the shortcut. That's simple and elegant, in fact far simpler than most customization interfaces. But they've given us too much rope, and it's easy to hang ourselves. This interface isn't safe to use. 
 
 In Emacs, Ctrl-S starts an incremental search. This is a well-designed feature. 
-•  it's highly responsive: updates as fast as the user can type 
-•  it's easily and obviously reversible: press Backspace if you made a mistake 
-•  it provides immediate feedback about what it's doing 
-• successful searches may even achieve early success: only 3 letters was enough to find BasicProgressGenerator, and I could instantly tell that it was enough 
-•  user gets early feedback about typos and failed searches 
+* it's highly responsive: updates as fast as the user can type 
+* it's easily and obviously reversible: press Backspace if you made a mistake 
+* it provides immediate feedback about what it's doing 
+* successful searches may even achieve early success: only 3 letters was enough to find BasicProgressGenerator, and I could instantly tell that it was enough 
+* user gets early feedback about typos and failed searches 
 
 What's the downside? All its controls are invisible. How do you start the incremental search? How do you search again? How do you go backwards? How do you do a case-sensitive search? 
 
@@ -123,7 +123,7 @@ If the system is very expensive or crashes frequently, those problems certainly 
 
 Notice that we can quantify all these measures of usability. Just as we can say algorithm X is faster than algorithm Y on some workload, we can say that interface X is more learnable, or more efficient, or more safe than interface Y for some set of tasks and some class of users, by designing an experiment that measures the two interfaces. 
 
-The usability dimensions are not uniformly important for all classes of users, or for all applications. That's one reason why it's important to understand your users, so that you know what you should optimize for. A web site used only once by millions of people - e.g., the national telephone do-not-call registry - has such a strong need for ease of learning, in fact zero learning, that it far outweighs other concerns. A stock trading program used on a daily basis by expert traders, for whom lost seconds translate to lost dollars, must put efficiency above all else.
+The usability dimensions are not uniformly important for all classes of users, or for all applications. That's one reason why it's important to understand your users, so that you know what you should optimize for. A web site used only once by millions of people—e.g., the national telephone do-not-call registry—has such a strong need for ease of learning, in fact zero learning, that it far outweighs other concerns. A stock trading program used on a daily basis by expert traders, for whom lost seconds translate to lost dollars, must put efficiency above all else.
 
 But users can't be simply classified as novices or experts, either. For some applications (like stock trading), your users may be domain experts, deeply knowledgeable about the stock market, and yet still be novices at your particular application. Even users with long experience using an application may be novices or infrequent users when it comes to some of its features. 
 
@@ -139,4 +139,4 @@ Each lecture will be accompanied by lecture notes available on the course web si
 
 Here are the key objectives of the course. This is what I hope you'll take away from the class. 
 
-Administrivia can be found on the course web site. 
+Administrivia can be found on the [Stellar course website](http://stellar.mit.edu/S/course/6/sp14/6.813/index.html). 
