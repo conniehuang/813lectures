@@ -21,8 +21,8 @@ These lecture notes are written in [Markdown](http://daringfireball.net/projects
 ~ $ jekyll serve --watch --baseurl ''
 ```
 
-The --watch flag auto-regenerates the site locally every time a change is made to source.
-The --baseurl flag is necessary to get links working properly on localhost.
+The `--watch` flag auto-regenerates the site locally every time a change is made to source.
+The `--baseurl` flag is necessary to get links working properly on localhost.
 
 ## Adding a new lecture
 1. Create a new Markdown file in `_posts/`. The title must have the format:
@@ -33,7 +33,10 @@ YEAR-MONTH-DAY-title.markdown
 
 The title should contain the lecture number (e.g., `L01`) and the short name of the lecture (e.g., "usability").
 For more information, read the [Jekyll docs](http://jekyllrb.com/docs/posts/) on creating posts.
+
+```
 //TODO (carolynz): Write more!
+```
 
 ## Making changes to the styling
 If you are making changes to the styling, make sure to only edit the `.scss` file. Changes to the `.css` file will get overwritten when the `.scss` file recompiles. 
