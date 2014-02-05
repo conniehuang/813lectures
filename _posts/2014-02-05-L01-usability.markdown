@@ -5,7 +5,7 @@ date: 2014-02-05 18:58:36
 categories: lecture
 
 lecture-number: 1
-lecturer: David Karger & Daniel Jackson
+lecturer: David Karger
 sections: [UI Hall of Fame and Shame, Why UI design is hard, Definition of usability, Course overview]
 pdf: "L01/L01-usability.pdf"
 ---
