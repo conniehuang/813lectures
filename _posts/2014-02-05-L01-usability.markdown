@@ -29,6 +29,8 @@ Each position on the scrollbar represents a template, and moving the scrollbar b
 
 This is a cute but poor use of a scrollbar. Notice that the scrollbar doesn't have any marks on it. How many templates are there? How are they sorted? How far do you have to move the scrollbar to select the next one? You can't even guess from this interface.
 
+![1]({{ site.baseurl }}/assets/L01/Pictures/02.png)
+
 Normally, a horizontal scrollbar underneath an image (or document, or some other content) is designed for scrolling the content horizontally. A new or infrequent user looking at the window sees the scrollbar, assumes it serves that function, and ignores it. Inconsistency with prior experience and other applications tends to trip up new or infrequent users. 
 
 Another way to put it is that the horizontal scrollbar is an affordance for continuous scrolling, not for discrete selection. We see affordances out in the real world, too; a door knob says "turn me", a handle says "pull me". 
@@ -45,7 +47,12 @@ On the plus side, the designer of this dialog box at least recognized that there
 
 How could this dialog box be redesigned to solve some of these problems?
 
+![1]({{ site.baseurl }}/assets/L01/Pictures/03.png)
+
 Here's one way it might be redesigned. The templates now fill a list box on the left; selecting a template shows its preview on the right. This interface suffers from none of the problems of its predecessor: list boxes clearly afford selection to new or infrequent users; random access is trivial for frequent users. And no help message is needed. 
+
+![1]({{ site.baseurl }}/assets/L01/Pictures/04a.png)
+![1]({{ site.baseurl }}/assets/L01/Pictures/04b.png)
 
 Here's another bizarre interface, taken from a program that launches housekeeping tasks at scheduled intervals. 
 
@@ -59,6 +66,8 @@ Perhaps the worst part of this example is that it's not a result of laziness. So
 
 <h2 id="why-ui-design-is-hard">Why UI Design is Hard</h2>
 
+![1]({{ site.baseurl }}/assets/L01/Pictures/05.png)
+
 Gimp is an open-source image editing program, comparable to Adobe Photoshop. Gimp's designers made a strange choice for its menus. Gimp windows have no menu bar. Instead, all Gimp menus are accessed from a context menu, which pops up on right-click. 
 
 This is certainly inconsistent with other applications, and new users are likely to stumble trying to find, for example, the File menu, which never appears on a context menu in other applications. (I certainly stumbled as a new user of Gimp.) But Gimp's designers were probably thinking about expert users when they made this decision. A context menu should be faster to invoke, since you don't have to move the mouse up to the menu bar. A context menu can be popped up anywhere. So it should be faster. Right? 
@@ -70,6 +79,9 @@ Part of the problem here is the way GTK (the UI toolkit used by Gimp) implements
 Apple Macintosh does even better: when a submenu opens, there's a triangular zone, spreading from the mouse to the submenu, in which the mouse pointer can move without losing the submenu. So you can drive diagonally toward Quit without losing the File menu, or you can drive straight down to get to the Edit menu instead. 
 Gimp's designers made a choice without fully considering how it interacted with human capabilities. We'll see that there are some techniques and principles that we can use to predict how decisions like this will affect a user interface—and we'll also see how we can measure and evaluate the actual effects. 
 
+![1]({{ site.baseurl }}/assets/L01/Pictures/06a.png)
+![1]({{ site.baseurl }}/assets/L01/Pictures/06b.png)
+
 There's another interesting design feature in Gimp's menus—well-intentioned and clever, but problematic in practice. Suppose my mouse is halfway down the File menu when I notice that the Quit command actually has a keyboard shortcut: Ctrl-Q. Great! So I press it. 
 
 But it doesn't invoke the Quit command. Instead, it changes the shortcut of whatever command my mouse is hovering over—in this case, Save—to Ctrl-Q. This is a mode: a state of the system in which a user action has a different meaning than it does in other states. Modes may be inevitable in user interfaces, but mode errors—using the action in the wrong mode, so it does something you don't intend—do not have to be inevitable. 
@@ -77,6 +89,8 @@ But it doesn't invoke the Quit command. Instead, it changes the shortcut of what
 Worse, it's not an easy error to undo. (Pressing Ctrl-Z, the conventional undo shortcut, only makes it worse!) I have to reassign the old shortcut to the Save command—if I can remember the original shortcut. Then I have find the command whose original shortcut was Ctrl-Q, and restore that one as well. This error wasn't easily recoverable. 
 
 Gimp's designers had a terrific idea here—making it easy to assign keyboard shortcuts by just pointing at the menu item you want to change and pressing the shortcut. That's simple and elegant, in fact far simpler than most customization interfaces. But they've given us too much rope, and it's easy to hang ourselves. This interface isn't safe to use. 
+
+![1]({{ site.baseurl }}/assets/L01/Pictures/07.png)
 
 In Emacs, Ctrl-S starts an incremental search. This is a well-designed feature. 
 * it's highly responsive: updates as fast as the user can type 
@@ -89,11 +103,18 @@ What's the downside? All its controls are invisible. How do you start the increm
 
 Once learned, however, these commands are simple. Ctrl-S starts the search. Pressing Ctrl-S again looks for a later match. (But now there is the possibility of mode error!) Pressing Ctrl-R looks backwards for a previous match. (What does Backspace do?) Using any capitalized letters in your query forces a case-sensitive search. (But how do I search for an all-lowercase string case-sensitively?) 
 
+![1]({{ site.baseurl }}/assets/L01/Pictures/08.png)
+
 XEmacs has menus (the original Emacs didn't). Alas, XEmacs isn't interested in helping users learn incremental search. Instead, it pops up this conventional Find dialog, which scores great on visibility, but lacks the responsiveness, easy reversibility, and fast performance of incremental search. Even worse, it covers up the matches you're trying to find unless you manhandle it out of the way! 
+
+![1]({{ site.baseurl }}/assets/L01/Pictures/09a.png)
+![1]({{ site.baseurl }}/assets/L01/Pictures/09b.png)
 
 Finally, we have the much-reviled Microsoft Office Paperclip. 
 
 Clippy was a well-intentioned effort to solve a real usability problem. Users don't read the manual, don't use the online help, and don't know how to find the answers to their problems. Clippy tries to suggest answers to the problem it thinks you're having. 
+
+![1]({{ site.baseurl }}/assets/L01/Pictures/10.png)
 
 Unfortunately it's often wrong, often intrusive, and often annoying. 
 
