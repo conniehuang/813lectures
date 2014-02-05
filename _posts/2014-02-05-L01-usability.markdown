@@ -12,7 +12,7 @@ pdf: "L01/L01-usability.pdf"
 
 <h2 id="ui-hall-of-fame-and-shame">UI Hall of Fame and Shame</h2>
 
-![1](/assets/L01/Pictures/01.png)
+![1]({{ site.baseurl }}/assets/L01/Pictures/01.png)
 
 Slapping a pretty window interface on a program does not automatically confer usability on it. This example shows why. 
 
