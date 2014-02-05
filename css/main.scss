@@ -142,9 +142,7 @@ blockquote {
       float: right;
       color: darken($gray, 30%);
     }
-
   }
-
 }
 
 #notes {
@@ -152,6 +150,11 @@ blockquote {
   overflow-y: scroll;
   float: right;
   width: 59%;
+
+  img{
+  display: block;
+  margin: 0 auto;
+  }
 }
 
 .lecture-header {
