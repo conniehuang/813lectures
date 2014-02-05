@@ -80,7 +80,6 @@ Apple Macintosh does even better: when a submenu opens, there's a triangular zon
 Gimp's designers made a choice without fully considering how it interacted with human capabilities. We'll see that there are some techniques and principles that we can use to predict how decisions like this will affect a user interface—and we'll also see how we can measure and evaluate the actual effects. 
 
 ![1]({{ site.baseurl }}/assets/L01/Pictures/06a.png)
-![1]({{ site.baseurl }}/assets/L01/Pictures/06b.png)
 
 There's another interesting design feature in Gimp's menus—well-intentioned and clever, but problematic in practice. Suppose my mouse is halfway down the File menu when I notice that the Quit command actually has a keyboard shortcut: Ctrl-Q. Great! So I press it. 
 
