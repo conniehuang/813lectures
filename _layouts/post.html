@@ -9,5 +9,14 @@ layout: default
 </section>
 
 <div class="post">
+  <h2>Today's Topics</h2>
+  <ul class="table-of-contents">
+    {% for section in page.sections %}
+      {% assign section-split = section | split: ' ' %}
+      {% assign section-url = section-split | join: '-' %}
+      <li class="lecture-section"><a href="{{ site.baseurl }}{{ post.url }}#{{ section-url | downcase }}">{{ section }}</a></li>
+    {% endfor %}
+  </ul>
+
   {{ content }}
 </div>
