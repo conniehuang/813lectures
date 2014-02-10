@@ -167,6 +167,7 @@ header.lecture-header {
     padding: 10px 0 0 0; }
 
 .slide {
+  counter-increment: section;
   border: 1px solid #b4b4c8;
   padding: 40px 50px 50px 50px;
   width: 75%;
@@ -182,6 +183,10 @@ header.lecture-header {
     text-align: center; }
   .slide ul > li > ul {
     margin-left: 25px; }
+  .slide:after {
+    content: counter(section);
+    font-size: 0.8em;
+    float: right; }
 
 @media print {
   #notes {

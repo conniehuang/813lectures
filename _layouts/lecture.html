@@ -22,7 +22,7 @@ layout: base
     {% for section in page.sections %}
       {% assign section-split = section | split: ' ' %}
       {% assign section-url = section-split | join: '-' %}
-      <li class="lecture-section"><a href="{{ site.baseurl }}{{ post.url }}#{{ section-url | downcase }}">{{ section }}</a></li>
+      <li class="lecture-section"><a href="{{ site.baseurl }}{{ page.url }}#{{ section-url | downcase }}">{{ section }}</a></li>
     {% endfor %}
   </ul>
 
