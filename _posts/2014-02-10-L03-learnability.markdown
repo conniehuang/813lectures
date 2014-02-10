@@ -33,7 +33,9 @@ What real-world metaphor is used by this interface? How well does it do with kno
   </ul>
 </div>
 
-There’s a general principle of learnability: **consistency**. This rule is often given the hifalutin’ name the Principle of Least Surprise, which basically means that you shouldn’t surprise the user with the way a command or interface object works. Similar things should look, and act, in similar ways. Conversely, different things should be visibly different.
+There’s a general principle of learnability: **consistency**. This rule is often given the hifalutin’ name the Principle of Least Surprise, which basically means that you shouldn’t surprise the user with the way a command or interface object works.
+
+#### Similar things should look, and act, in similar ways. Conversely, different things should be visibly different.
 
 <div class="slide">
   <h1>
@@ -46,7 +48,11 @@ There’s a general principle of learnability: **consistency**. This rule is oft
   </ul>
 </div>
 
-There are three kinds of consistency you need to worry about: **internal consistency** within your application; **external consistency** with other applications on the same platform; and **metaphorical consistency** with your interface metaphor or similar real-world objects.
+There are three kinds of consistency you need to worry about:
+
+1. **Internal consistency** within your application
+2. **External consistency** with other applications on the same platform
+3. **Metaphorical consistency** with your interface metaphor or similar real-world objects
 
 The RealCD interface has problems with both metaphorical consistency (CD jewel cases don’t play; you don’t open them by pressing a button on the spine; and they don’t open as shown), and with external consistency (the player controls aren’t arranged horizontally as they’re usually seen; and the track list doesn’t use the same scrollbar that other applications do). 
 
@@ -72,7 +78,11 @@ The RealCD interface has problems with both metaphorical consistency (CD jewel c
   </ul>
 </div>
 
-Metaphors are one way you can bring the real world into your interface. We started out by talking about RealCD, an example of an interface that uses a strong metaphor in its interface. A well-chosen, well-executed metaphor can be quite effective and appealing, but be aware that metaphors can also mislead. A computer interface must deviate from the metaphor at some point—otherwise, why aren’t you just using the physical object instead? At those deviation points, the metaphor may do more harm than good. For example, it’s easy to say “a word processor is like a typewriter,” but you shouldn’t really use it like a typewriter. Pressing Enter every time the cursor gets close to the right margin, as a typewriter demands, would wreak havoc with the word processor’s automatic word-wrapping.
+Metaphors are one way you can bring the real world into your interface. We started out by talking about RealCD, an example of an interface that uses a strong metaphor in its interface.
+
+#### A well-chosen, well-executed metaphor can be quite effective and appealing, but be aware that metaphors can also mislead.
+
+A computer interface must deviate from the metaphor at some point—otherwise, why aren’t you just using the physical object instead? At those deviation points, the metaphor may do more harm than good. For example, it’s easy to say “a word processor is like a typewriter,” but you shouldn’t really use it like a typewriter. Pressing Enter every time the cursor gets close to the right margin, as a typewriter demands, would wreak havoc with the word processor’s automatic word-wrapping.
 
 The advantage of metaphor is that you’re borrowing a conceptual model that the user already has experience with. A metaphor can convey a lot of knowledge about the interface model all at once. It’s a *notebook*. It’s a *CD case*. It’s a *desktop*. It’s a *trashcan*.
 
@@ -80,7 +90,9 @@ Each of these metaphors carries along with it a lot of knowledge about the parts
 
 Some interface metaphors are famous and largely successful. The desktop metaphor—documents, folders, and overlapping paperlike windows on a desk-like surface—is widely used and copied. The trashcan, a place for discarding things but also for digging around and bringing them back, is another effective metaphor—so much so that Apple defended its trashcan with a lawsuit, and imitators are forced to use a different look. (Recycle Bin, anyone?)
 
-The basic rule for metaphors is: use it if you have one, but don’t stretch for one if you don’t. Appropriate metaphors can be very hard to find, particularly with real-world objects. The designers of RealCD stretched hard to use their CD-case metaphor (since in the real world, CD cases don’t even play CDs), and it didn’t work well.
+#### The basic rule for metaphors is: use it if you have one, but don’t stretch for one if you don’t.
+
+Appropriate metaphors can be very hard to find, particularly with real-world objects. The designers of RealCD stretched hard to use their CD-case metaphor (since in the real world, CD cases don’t even play CDs), and it didn’t work well.
 
 Metaphors can also be deceptive, leading users to infer behavior that your interface doesn’t provide. Sure, it looks like a book, but can I write in the margin? Can I rip out a page?
 
@@ -88,7 +100,8 @@ Metaphors can also be constraining. Strict adherence to the desktop metaphor wou
 
 The biggest problem with metaphorical design is that your interface is presumably more capable than the real-world object, so at some point you have to break the metaphor. Nobody would use a word processor if really behaved like a typewriter. Features like automatic word-wrapping break the typewriter metaphor, by creating a distinction between hard carriage returns and soft returns.
 
-Most of all, using a metaphor doesn’t save an interface that does a bad job communicating itself to the user. Although RealCD’s model was metaphorical—it opened like a CD case, and it had a liner notes booklet inside the cover—these features had such poor visibility and perceived affordances that they were ineffective. 
+#### Most of all, using a metaphor doesn’t save an interface that does a bad job communicating itself to the user.
+Although RealCD’s model was metaphorical—it opened like a CD case, and it had a liner notes booklet inside the cover—these features had such poor visibility and perceived affordances that they were ineffective. 
 
 <div class="slide">
 <h1>Natural Mapping: Consistency of Layout</h1>
@@ -123,7 +136,9 @@ A few things to think about:
   <h1>Internal Consistency in Wording</h1>
 </div>
 
-Another important kind of consistency, often overlooked, is in wording. Use the same terms throughout your user interface. If your interface says “share price” in one place, “stock price” in another, and “stock quote” in a third, users will wonder whether these are three different things you’re talking about. Don’t get creative when you’re writing text for a user interface; keep it simple and uniform, just like all technical writing.
+Another important kind of consistency, often overlooked, is in wording. Use the same terms throughout your user interface. If your interface says “share price” in one place, “stock price” in another, and “stock quote” in a third, users will wonder whether these are three different things you’re talking about.
+
+#### Don’t get creative when you’re writing text for a user interface; keep it simple and uniform, just like all technical writing.
 
 Here are some examples from the Course VI Underground Guide web site—confusion about what’s a “review” and what’s an “evaluation”. 
 
@@ -139,7 +154,7 @@ Here are some examples from the Course VI Underground Guide web site—confusion
 
 **External consistency** in wording is important too—in other words, speak the user’s language as much as possible, rather than forcing them to learn a new one. If the user speaks English, then the interface should also speak English, not Geekish. Technical jargon should be avoided. Use of jargon reflects aspects of the system model creeping up into the interface model, unnecessarily. How might a user interpret the dialog box shown here? One poor user actually read type as a verb, and dutifully typed M-I-S-M-A-T-C-H every time this dialog appeared. The user’s reaction makes perfect sense when you remember that most computer users do just that, type, all day. But most programmers wouldn’t even think of reading the message that way. Yet another example showing that you are not the user.
 
-Technical jargon should only be used when it is specific to the application domain and the expected users are domain experts. An interface designed for doctors shouldn’t dumb down medical terms.
+#### Technical jargon should only be used when it is specific to the application domain and the expected users are domain experts. An interface designed for doctors shouldn’t dumb down medical terms.
 
 When designing an interface that requires the user to type in commands or search keywords, support as many aliases or synonyms as you can. Different users rarely agree on the same name for an object or command. One study found that the probability that two users would mention the same name was only 7-18%. (Furnas et al, “The vocabulary problem in human-system communication,” CACM v30 n11, Nov. 1987).
 
