@@ -269,7 +269,17 @@ It is very easy to miss the search interface altogether because of the poor visi
 
 Here’s an exercise that you can try with your favorite webpage. It’s a chunk of Javascript that changes all the text on the page to X’s, so that all you can see is what the page is telling you nonverbally, using affordances. (It doesn’t affect text that’s rendered in an image, unfortunately, so this has the interesting side effect of discovering pages with poor accessibility and poor internationalization.)
 
-Here’s the Javascript code: var result = document.evaluate("//text()", document.body, null, XPathResult.UNORDERED_NODE_SNAPSHOT_TYPE, null) ;for (var i = 0; i < result.snapshotLength; ++i) {var node = result.snapshotItem(i);if ((node.textContent+"").match(/\w/)&&node.parentNode.nodeName != "STYLE") {node.textContent = node.textContent.replace(/[A-­‐Z0-­‐9]/g, "X").replace(/[a-­‐z]/g, "x");}}void 0
+Here’s the Javascript code:
+{% highlight javascript %}
+var result = document.evaluate("//text()", document.body, null, XPathResult.UNORDERED_NODE_SNAPSHOT_TYPE, null);
+for (var i = 0; i < result.snapshotLength; ++i) {
+  var node = result.snapshotItem(i);
+  if ((node.textContent+"").match(/\w/)&&node.parentNode.nodeName != "STYLE") {
+    node.textContent = node.textContent.replace(/[A-­‐Z0-­‐9]/g, "X").replace(/[a-­‐z]/g, "x");
+  }
+}
+void 0
+{% endhighlight %}
 
 One way to use it is to open your browser’s Javascript console and just paste the code in; it will change the current page. Another way to use it is to create a new bookmark in your browser, and use as the URL javascript: followed by the code given above. Clicking on this bookmark will run the Javascript on the current page. (This is called a bookmarklet, and it’s an one way to modify web pages you don’t own.) 
 
@@ -277,7 +287,7 @@ One way to use it is to open your browser’s Javascript console and just paste 
 <h1>Picoquiz</h1>
 
 <ul>
-<li>Which of the following are affordances for sleeping?  (<strong>choose all good answers</strong>)
+<li>Which of the following are affordances for sleeping? (<strong>choose all good answers</strong>)
 <ul><li>a soft surface</li>
 <li>night time</li>
 <li>scorpions</li>
