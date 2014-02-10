@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: lecture
 title: Learnability, Part 2
 date: 2014-02-10 18:58:36
 categories: lecture
@@ -8,6 +8,7 @@ lecture-number: 3
 lecturer: Philip Guo
 sections: [Consistency, Affordances, Feedback, Information scent]
 pdf: "L03/L03-learnability.pdf"
+picoquiz: "http://courses.csail.mit.edu/6.831/2013/picoquiz?lectureId=3"
 ---
 
 Learning Approaches
@@ -214,6 +215,4 @@ Clicking through a link or bringing up a dialog box is next, and actually invoki
 
 Exploration is important to learning. But much of this lecture has been about techniques for reducing the costs of exploration, and making the right feature more obvious right away. An interface with very poor affordances will be very expensive to explore. Imagine a webpage whose links aren’t distinguished by underlining or color—you’ve just taken away the Glance, and forced the user to Read or Hover to discover what’s likely to be clickable. Now imagine it in a foreign language (or in the Xxxxxx’s we used in the affordance-stripping example)—you’ve just taken away Read. Now get rid of the mouse cursor feedback—no more Hover, and the user is forced to Click all over the place to explore. Your job as a designer is to make the user’s goal as easy to recognize in your user interface as possible. 
 
-Here’s an example of going overboard with information scent. There is so much text in the main links of this page (Search listings..., Advertise..., See..., Browse...) that it interferes with your ability to Glance over the page. A better approach would be to make the links themselves short and simple, and use the smaller text below each link to provide supporting scent. http://rentmonkey.mit.edu/account/home 
-
-To answer the picoquiz questions in this lecture, go to: http://courses.csail.mit.edu/6.831/2013/picoquiz?lectureId=3 
+Here’s an example of going overboard with information scent. There is so much text in the main links of this page (Search listings..., Advertise..., See..., Browse...) that it interferes with your ability to Glance over the page. A better approach would be to make the links themselves short and simple, and use the smaller text below each link to provide supporting scent. http://rentmonkey.mit.edu/account/home

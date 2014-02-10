@@ -1,3 +1,10 @@
+@media (max-width: 900px) {
+  header.lecture-header > div,
+  header.lecture-header > .lecture-info,
+  header.lecture-header > .lecture-buttons {
+    width: 100%;
+    max-width: 100%;
+    min-width: 100%; } }
 body {
   font-family: 'Whitney A', 'Whitney B', 'Segoe UI', 'Helvetica', 'Arial', sans-serif;
   font-weight: 400;
@@ -12,7 +19,8 @@ body {
 
 h1 {
   font-size: 2em;
-  line-height: 2.3em; }
+  line-height: 1.5em;
+  margin: .5em 0; }
 
 h2 {
   font-size: 1.5em;
@@ -69,8 +77,9 @@ a.button {
   border-radius: 5px;
   font-family: 'Whitney SC A', 'Whitney SC B';
   font-weight: 400;
-  float: right;
-  margin: 20px 0;
+  display: block;
+  text-align: center;
+  margin: 10px 0;
   border-bottom: 2px solid #9797b2;
   transition: all .5s;
   -webkit-transition: all .5s; }
@@ -78,7 +87,7 @@ a.button {
     background-color: #16cbb6;
     border-bottom: 2px solid #119d8d; }
   a.button i {
-    margin-right: 10px; }
+    margin-left: 10px; }
 
 blockquote {
   margin-left: 50px;
@@ -135,11 +144,34 @@ blockquote {
     margin: 0 auto;
     max-width: 100%; }
 
-.lecture-header {
-  padding-bottom: 40px;
-  border-bottom: 1px solid #b4b4c8; }
-  .lecture-header h3 {
+header.lecture-header {
+  padding-bottom: 20px;
+  border-bottom: 1px solid #b4b4c8;
+  overflow-y: hidden; }
+  header.lecture-header h3 {
     font-family: 'Whitney SC A', 'Whitney SC B';
     color: #b4b4c8; }
-    .lecture-header h3 .lecture-date {
+    header.lecture-header h3 .lecture-date {
       float: right; }
+  header.lecture-header div {
+    width: 45%;
+    margin-right: 0; }
+  header.lecture-header .lecture-info {
+    float: left;
+    width: auto;
+    max-width: 70%; }
+  header.lecture-header .lecture-buttons {
+    float: right;
+    width: 30%;
+    min-width: 200px;
+    padding: 10px 0 0 0; }
+
+@media print {
+  #notes {
+    width: 100%;
+    display: block;
+    margin: 0;
+    padding: 0; }
+
+  .print-hide {
+    display: none; } }

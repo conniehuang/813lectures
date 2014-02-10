@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: lecture
 title: Learnability, Part 1
 date: 2014-02-07 18:58:36
 categories: lecture
@@ -8,6 +8,7 @@ lecture-number: 2
 lecturer: Philip Guo
 sections: [Learning approaches, Interaction styles, Conceptual models]
 pdf: "L02/L02-learnability.pdf"
+picoquiz: "http://courses.csail.mit.edu/6.831/2013/picoquiz?lectureId=2"
 ---
 
 Learning Approaches
@@ -153,7 +154,7 @@ A cell phone presents the same simple interface model as a conventional wired ph
 
 As a software engineer, you should be quite familiar with this notion. A module interface offers a certain model of operation to clients of the module, but its implementation may be significantly different. 
 
-> In software engineering, this divergence between interface and implementation is valued as a way to manage complexity and plan for change. In user interface design, we value it primarily for other reasons: the interface model should be simpler and more closely reflect the user’s model of the actual task.
+#### In software engineering, this divergence between interface and implementation is valued as a way to manage complexity and plan for change. In user interface design, we value it primarily for other reasons: the interface model should be simpler and more closely reflect the user’s model of the actual task.
 
 Note that we’re using model in a more general and abstract sense here than when we talk about the model-view-controller pattern (which you may have heard of previously, and which we’ll discuss more in a future lecture). In MVC, the model is a software component (like a class or group of classes) that stores application data and implements the application behavior behind an interface. Here, a model is an abstracted description of how a system works. The system model on this slide might describe the way an MVC model class behaves (for example, storing text as a list of lines). The interface model might describe the way an MVC view class presents that system model (e.g., allowing end-of-lines to be “deleted” just as if they were characters). Finally, the user model isn’t software at all; it’s all in the user’s mind.
 
@@ -165,7 +166,7 @@ But on a web site that has pages in some kind of linear sequence of their own—
 
 Most of the time, this erroneous mental model of Back will behave just the same as the true system model. But it will deviate if the user mixes the Previous link with the Back button—after pressing Previous, the Back button will behave like Next!
 
-A nice article with other examples of tricky mental model/system model mismatch problems is “Mental and conceptual models, and the problem of contingency” by Charles Hannon, interactions, November 2008. http://portal.acm.org/citation.cfm?doid=1390085.1390099
+A nice article with other examples of tricky mental model/system model mismatch problems is [“Mental and conceptual models, and the problem of contingency”](http://portal.acm.org/citation.cfm?doid=1390085.1390099) by Charles Hannon, interactions, November 2008. 
 
 Consider image editing software. Programs like Photoshop and Gimp use a pixel editing model, in which an image is represented by an array of pixels (plus a stack of layers). Programs like PowerPoint and Illustrator, on the other hand, use a structured graphics model, in which an image is represented by a collection of graphical objects, like lines, rectangles, circles, and text. In this case, the choice of model strongly constrains the kinds of operations available to a user. You can easily tweak individual pixels in Microsoft Paint, but you can’t easily move an object once you’ve drawn it into the picture. 
 
@@ -188,5 +189,3 @@ The problem here is that the thermostat isn’t effectively communicating its mo
 To help you check your understanding and prepare for the nanoquiz in class, the lecture notes include a “picoquiz” question after every section. The picoquiz questions are similar to the nanoquiz questions you can expect to see in class, but you can check your answers yourself.
 
 Note that the picoquiz has all the questions from this lecture, including questions from later in the lecture that you may not have read the material for yet. You can do each question as you get to it in your reading, and then submit the whole quiz when you’ve finished reading.
-
-To answer the picoquiz questions in this lecture, go to: http://courses.csail.mit.edu/6.831/2013/picoquiz?lectureId=2 
