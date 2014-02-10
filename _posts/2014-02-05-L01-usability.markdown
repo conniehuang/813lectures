@@ -12,11 +12,12 @@ pdf: "L01/L01-usability.pdf"
 
 <h2 id="ui-hall-of-fame-and-shame">UI Hall of Fame and Shame</h2>
 
+#### Usability is about creating effective user interfaces (UIs). Slapping a pretty window interface on a program does not automatically confer usability on it.
+
+This example shows why. 
+
 ![1]({{ site.baseurl }}/assets/L01/Pictures/01.png)
 
-Slapping a pretty window interface on a program does not automatically confer usability on it. This example shows why. 
-
-> Usability is about creating effective user interfaces (UIs). 
 
 This dialog box, which appeared in a program that prints custom award certificates, presents the task of selecting a template for the certificate. 
 This interface is clearly graphical. It's mouse-driven—no memorizing or typing complicated commands. It's even what-you-see-is-what-you-get (WYSIWYG)—the user gets a preview of the award that will be created. 
@@ -43,7 +44,7 @@ Even the help text has usability problems. "Press OKAY"? Where is that? And why 
 
 On the plus side, the designer of this dialog box at least recognized that there was a problem—hence the help message. But the help message is indicative of a flawed approach to usability. 
 
-> Usability can't be left until the end of software development, like package artwork or an installer. It can't be patched here and there with extra messages or more documentation. It must be part of the process, so that usability bugs can be fixed, instead of merely patched. 
+#### Usability can't be left until the end of software development, like package artwork or an installer. It can't be patched here and there with extra messages or more documentation. It must be part of the process, so that usability bugs can be fixed, instead of merely patched. 
 
 How could this dialog box be redesigned to solve some of these problems?
 
@@ -117,11 +118,11 @@ Clippy was a well-intentioned effort to solve a real usability problem. Users do
 
 Unfortunately it's often wrong, often intrusive, and often annoying. 
 
-> The subjective quality of your interface matters too. 
+#### The subjective quality of your interface matters too. 
 
 Unfortunately, user interfaces are not easy to design. You (the developer) are not a typical user. You know far more about your application than any user will. You can try to imagine being your mother, or your grandma, but it doesn't help much. It's very hard to forget things you know. 
 
-> This is how usability is different from everything else you learn about software engineering. Specifications, assertions, and object models are all about communicating with other programmers, who are probably a lot like us. Usability is about communicating with other users, who are probably not like us. 
+#### This is how usability is different from everything else you learn about software engineering. Specifications, assertions, and object models are all about communicating with other programmers, who are probably a lot like us. Usability is about communicating with other users, who are probably not like us. 
 
 The user is always right. Don't blame the user for what goes wrong. If users consistently make mistakes with some part of your interface, take it as a sign that your interface is wrong, not that the users are dumb. This lesson can be very hard for a software designer to swallow! 
 
@@ -129,7 +130,7 @@ Unfortunately, the user is not always right. Users aren't oracles. They don't al
 
 Another example: Google has discovered that when they survey users about how many search results they want per page (10, 20, 30), users overwhelmingly say "30 results". But when Google actually deploys 30-result search pages (as part of an "A/B test", which we'll talk about in a later lecture), usage drops by 20% relative to the conventional 10-result page. Why? Probably because the 30-result page takes a half second longer to load. (http://perspectives.mvdirona.com/2009/10/31/TheCostOfLatency.aspx) 
 
-> Users aren't designers, either, and shouldn't be forced to fill that role. 
+#### Users aren't designers, either, and shouldn't be forced to fill that role. 
 
 It's easy to say, "Yeah, the interface is bad, but users can customize it however they want it." There are two problems with this statement: (1) most users don't, and (2) user customizations may be even worse! One study of command abbreviations found that users made twice as many errors with their own command abbreviations than with a carefully-designed set (Grudin & Barnard, "When does an abbreviation become a word?", CHI '85). So customization isn't the silver bullet. 
 
@@ -137,11 +138,13 @@ It's easy to say, "Yeah, the interface is bad, but users can customize it howeve
 
 The property we're concerned with here, usability, is more precise than just how "good" the system is. A system can be good or bad in many ways. 
 
-> If important requirements are unsatisfied by the system, that's probably a deficiency in functionality, not in usability. 
+#### If important requirements are unsatisfied by the system, that's probably a deficiency in functionality, not in usability. 
 
 If the system is very expensive or crashes frequently, those problems certainly detract from the user's experience, but we don't need user testing to tell us that. 
 
-> More narrowly defined, usability measures how well users can use the system's functionality. Usability has several dimensions: learnability, efficiency, and safety. These aren't the only aspects of a user interface that you might care about (for example, subjective feelings are important too, as is fatigue), but these are the primary ones we'll care about in this class. 
+#### More narrowly defined, usability measures how well users can use the system's functionality. Usability has several dimensions: learnability, efficiency, and safety.
+
+These aren't the only aspects of a user interface that you might care about (for example, subjective feelings are important too, as is fatigue), but these are the primary ones we'll care about in this class. 
 
 Notice that we can quantify all these measures of usability. Just as we can say algorithm X is faster than algorithm Y on some workload, we can say that interface X is more learnable, or more efficient, or more safe than interface Y for some set of tasks and some class of users, by designing an experiment that measures the two interfaces. 
 

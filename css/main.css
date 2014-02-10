@@ -23,6 +23,28 @@ h3 {
   font-size: 1.1em;
   font-weight: 400; }
 
+h4 {
+  width: 80%;
+  font-size: 1.3em;
+  line-height: 1.5em;
+  text-align: center;
+  font-weight: normal;
+  margin: 1em auto;
+  padding: 1em 0;
+  color: #81818b; }
+  h4::before {
+    content: "";
+    display: block;
+    width: 100px;
+    margin: 0 auto 20px auto;
+    border-top: 2px solid #d1d1d4; }
+  h4::after {
+    content: "";
+    display: block;
+    width: 100px;
+    margin: 20px auto 0 auto;
+    border-bottom: 2px solid #d1d1d4; }
+
 p {
   margin: 1em 0; }
 

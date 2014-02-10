@@ -16,7 +16,7 @@ IBM’s RealCD is CD player software, which allows you to play an audio CD in yo
 
 Why is it called “Real”? Because its designers based it on a real-world object: a plastic CD case. This interface has a **metaphor**, an analog in the real world. 
 
-> Metaphors are one way to make an interface more learnable, since users can make guesses about how it will work based on what they already know about the interface’s metaphor. 
+#### Metaphors are one way to make an interface more learnable, since users can make guesses about how it will work based on what they already know about the interface’s metaphor. 
 
 Unfortunately, the designers’ careful adherence to this metaphor produced some remarkable effects, none of them good.
 
@@ -40,7 +40,7 @@ Help Browser.
 
 The aspect of the metaphor in play here is the liner notes included in a CD case. Removing the liner notes booklet from a physical CD case is indeed a fiddly operation, and alas, the designers of RealCD have managed to replicate that part of the experience pretty accurately. But in a physical CD case, the liner notes usually contain lyrics or credits or goofy pictures of the band, which aren’t at all important to the primary task of playing the music. RealCD puts the help in this invisible, nearly unreachable, and probably undiscoverable booklet.
 
-> This example has several lessons: first, that interface metaphors can be horribly misused; and second, that the presence of a metaphor does not at all guarantee an “intuitive”, or easy-to-learn, user interface. (There’s a third lesson too, unrelated to metaphor—that beautiful graphic design doesn’t equal usability, and that graphic designers can be just as blind to usability problems as programmers can.)
+This example has several lessons: first, that interface metaphors can be horribly misused; and second, that the presence of a metaphor does not at all guarantee an “intuitive”, or easy-to-learn, user interface. (There’s a third lesson too, unrelated to metaphor—that beautiful graphic design doesn’t equal usability, and that graphic designers can be just as blind to usability problems as programmers can.)
 
 Fortunately, metaphor is not the only way to achieve learnability. In fact, it’s probably the hardest way, fraught with the most pitfalls for the designer. In this lecture and the next, we’ll look at some other ways to achieve learnability.
 
