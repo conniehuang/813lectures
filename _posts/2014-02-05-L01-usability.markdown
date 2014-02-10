@@ -15,9 +15,13 @@ pdf: "L01/L01-usability.pdf"
 #### Usability is about creating effective user interfaces (UIs). Slapping a pretty window interface on a program does not automatically confer usability on it.
 
 This example shows why. 
+<div class="slide">
+  <h1>User Interface Hall of Shame</h1>
+  <img src="{{ site.baseurl }}/assets/L01/Pictures/01.png" />
+  <p class="caption">Source: Interface Hall of Shame</p>
+</div>
 
-![1]({{ site.baseurl }}/assets/L01/Pictures/01.png)
-
+<!-- ![1]({{ site.baseurl }}/assets/L01/Pictures/01.png) -->
 
 This dialog box, which appeared in a program that prints custom award certificates, presents the task of selecting a template for the certificate. 
 This interface is clearly graphical. It's mouse-driven—no memorizing or typing complicated commands. It's even what-you-see-is-what-you-get (WYSIWYG)—the user gets a preview of the award that will be created. 
@@ -30,7 +34,13 @@ Each position on the scrollbar represents a template, and moving the scrollbar b
 
 This is a cute but poor use of a scrollbar. Notice that the scrollbar doesn't have any marks on it. How many templates are there? How are they sorted? How far do you have to move the scrollbar to select the next one? You can't even guess from this interface.
 
-![1]({{ site.baseurl }}/assets/L01/Pictures/02.png)
+<div class="slide">
+  <h1>User Interface Hall of Shame</h1>
+  <img src="{{ site.baseurl }}/assets/L01/Pictures/02.png" />
+  <p class="caption">Source: Interface Hall of Shame</p>
+</div>
+
+<!-- ![1]({{ site.baseurl }}/assets/L01/Pictures/02.png) -->
 
 Normally, a horizontal scrollbar underneath an image (or document, or some other content) is designed for scrolling the content horizontally. A new or infrequent user looking at the window sees the scrollbar, assumes it serves that function, and ignores it. Inconsistency with prior experience and other applications tends to trip up new or infrequent users. 
 
@@ -48,12 +58,25 @@ On the plus side, the designer of this dialog box at least recognized that there
 
 How could this dialog box be redesigned to solve some of these problems?
 
-![1]({{ site.baseurl }}/assets/L01/Pictures/03.png)
+<div class="slide">
+  <h1>The Example, Redesigned</h1>
+  <img src="{{ site.baseurl }}/assets/L01/Pictures/03.png" />
+  <p class="caption">Source: Interface Hall of Shame</p>
+</div>
+
+<!-- ![1]({{ site.baseurl }}/assets/L01/Pictures/03.png) -->
 
 Here's one way it might be redesigned. The templates now fill a list box on the left; selecting a template shows its preview on the right. This interface suffers from none of the problems of its predecessor: list boxes clearly afford selection to new or infrequent users; random access is trivial for frequent users. And no help message is needed. 
 
-![1]({{ site.baseurl }}/assets/L01/Pictures/04a.png)
-![1]({{ site.baseurl }}/assets/L01/Pictures/04b.png)
+<!-- ![1]({{ site.baseurl }}/assets/L01/Pictures/04a.png)
+![1]({{ site.baseurl }}/assets/L01/Pictures/04b.png) -->
+
+<div class="slide">
+  <h1>More UI Hall of Shame</h1>
+  <img src="{{ site.baseurl }}/assets/L01/Pictures/04a.png" />
+  <img src="{{ site.baseurl }}/assets/L01/Pictures/04b.png" />
+  <p class="caption">Source: Interface Hall of Shame</p>
+</div>
 
 Here's another bizarre interface, taken from a program that launches housekeeping tasks at scheduled intervals. 
 
@@ -61,15 +84,20 @@ The date and time look like editable fields (affordance), but you can't edit the
 
 This dialog box displays time differently, using 12-hour time (7:17 pm) where the original dialog used 24-hour time (consistency). Just to increase the confusion, it also adds a third representation, an analog clock face. 
 
-So how is the time actually changed? By clicking mouse buttons: clicking the left mouse button increases the minute by 1 (wrapping around from 59 to 0), and clicking the right mouse button increases the hour. Sound familiar? This designer has managed to turn a sophisticated graphical user interface, full of windows, buttons, and widgets, and controlled by a hundred-key keyboard and two-button mouse, into a clock radio! 
+So how is the time actually changed? By clicking mouse buttons: clicking the left mouse button increases the minute by 1 (wrapping around from 59 to 0), and clicking the right mouse button increases the hour. Sound familiar? This designer has managed to turn a sophisticated graphical user interface, full of windows, buttons, and widgets, and controlled by a hundred-key keyboard and two-button mouse, into a *clock radio*! 
 
 Perhaps the worst part of this example is that it's not a result of laziness. Somebody went to a lot of effort to draw that clock face with hands. If only they'd spent some of that time thinking about usability instead.
 
 <h2 id="why-ui-design-is-hard">Why UI Design is Hard</h2>
 
-![1]({{ site.baseurl }}/assets/L01/Pictures/05.png)
+<div class="slide">
+  <h1>UI Hall of Fame or Shame?</h1>
+  <img src="{{ site.baseurl }}/assets/L01/Pictures/05.png" />
+</div>
 
-Gimp is an open-source image editing program, comparable to Adobe Photoshop. Gimp's designers made a strange choice for its menus. Gimp windows have no menu bar. Instead, all Gimp menus are accessed from a context menu, which pops up on right-click. 
+<!-- ![1]({{ site.baseurl }}/assets/L01/Pictures/05.png) -->
+
+Gimp is an open-source image editing program, comparable to Adobe Photoshop. Gimp's designers made a strange choice for its menus. Gimp windows have no menu bar. Instead, all Gimp menus are accessed from a **context menu**, which pops up on right-click. 
 
 This is certainly inconsistent with other applications, and new users are likely to stumble trying to find, for example, the File menu, which never appears on a context menu in other applications. (I certainly stumbled as a new user of Gimp.) But Gimp's designers were probably thinking about expert users when they made this decision. A context menu should be faster to invoke, since you don't have to move the mouse up to the menu bar. A context menu can be popped up anywhere. So it should be faster. Right? 
 
@@ -80,41 +108,74 @@ Part of the problem here is the way GTK (the UI toolkit used by Gimp) implements
 Apple Macintosh does even better: when a submenu opens, there's a triangular zone, spreading from the mouse to the submenu, in which the mouse pointer can move without losing the submenu. So you can drive diagonally toward Quit without losing the File menu, or you can drive straight down to get to the Edit menu instead. 
 Gimp's designers made a choice without fully considering how it interacted with human capabilities. We'll see that there are some techniques and principles that we can use to predict how decisions like this will affect a user interface—and we'll also see how we can measure and evaluate the actual effects. 
 
-![1]({{ site.baseurl }}/assets/L01/Pictures/06a.png)
+<div class="slide">
+  <h1>UI Hall of Fame or Shame?</h1>
+  <img src="{{ site.baseurl }}/assets/L01/Pictures/06a.png" />
+</div>
+<!-- ![1]({{ site.baseurl }}/assets/L01/Pictures/06a.png) -->
 
 There's another interesting design feature in Gimp's menus—well-intentioned and clever, but problematic in practice. Suppose my mouse is halfway down the File menu when I notice that the Quit command actually has a keyboard shortcut: Ctrl-Q. Great! So I press it. 
 
-But it doesn't invoke the Quit command. Instead, it changes the shortcut of whatever command my mouse is hovering over—in this case, Save—to Ctrl-Q. This is a mode: a state of the system in which a user action has a different meaning than it does in other states. Modes may be inevitable in user interfaces, but mode errors—using the action in the wrong mode, so it does something you don't intend—do not have to be inevitable. 
+But it doesn't invoke the Quit command. Instead, it changes the shortcut of whatever command my mouse is hovering over—in this case, Save—to Ctrl-Q. This is a **mode**: a state of the system in which a user action has a different meaning than it does in other states. Modes may be inevitable in user interfaces, but **mode errors**—using the action in the wrong mode, so it does something you don't intend—do not have to be inevitable. 
 
-Worse, it's not an easy error to undo. (Pressing Ctrl-Z, the conventional undo shortcut, only makes it worse!) I have to reassign the old shortcut to the Save command—if I can remember the original shortcut. Then I have find the command whose original shortcut was Ctrl-Q, and restore that one as well. This error wasn't easily recoverable. 
+Worse, it's not an easy error to undo. (Pressing Ctrl-Z, the conventional undo shortcut, only makes it worse!) I have to reassign the old shortcut to the Save command—if I can remember the original shortcut. Then I have find the command whose original shortcut was Ctrl-Q, and restore that one as well. This error wasn't easily **recoverable**. 
 
-Gimp's designers had a terrific idea here—making it easy to assign keyboard shortcuts by just pointing at the menu item you want to change and pressing the shortcut. That's simple and elegant, in fact far simpler than most customization interfaces. But they've given us too much rope, and it's easy to hang ourselves. This interface isn't safe to use. 
+Gimp's designers had a terrific idea here—making it easy to assign keyboard shortcuts by just pointing at the menu item you want to change and pressing the shortcut. That's simple and elegant, in fact far simpler than most customization interfaces. But they've given us too much rope, and it's easy to hang ourselves. This interface isn't **safe** to use. 
 
-![1]({{ site.baseurl }}/assets/L01/Pictures/07.png)
+<div class="slide">
+  <h1>UI Hall of Fame or Shame?</h1>
+  <img src="{{ site.baseurl }}/assets/L01/Pictures/07.png" />
+</div>
 
-In Emacs, Ctrl-S starts an incremental search. This is a well-designed feature. 
-* it's highly responsive: updates as fast as the user can type 
-* it's easily and obviously reversible: press Backspace if you made a mistake 
-* it provides immediate feedback about what it's doing 
+<!-- ![1]({{ site.baseurl }}/assets/L01/Pictures/07.png) -->
+
+In Emacs, Ctrl-S starts an **incremental search**. This is a well-designed feature. 
+* it's highly **responsive**: updates as fast as the user can type 
+* it's easily and obviously **reversible**: press Backspace if you made a mistake 
+* it provides immediate **feedback** about what it's doing 
 * successful searches may even achieve early success: only 3 letters was enough to find BasicProgressGenerator, and I could instantly tell that it was enough 
 * user gets early feedback about typos and failed searches 
 
-What's the downside? All its controls are invisible. How do you start the incremental search? How do you search again? How do you go backwards? How do you do a case-sensitive search? 
+What's the downside? All its controls are **invisible**. How do you start the incremental search? How do you search again? How do you go backwards? How do you do a case-sensitive search? 
 
 Once learned, however, these commands are simple. Ctrl-S starts the search. Pressing Ctrl-S again looks for a later match. (But now there is the possibility of mode error!) Pressing Ctrl-R looks backwards for a previous match. (What does Backspace do?) Using any capitalized letters in your query forces a case-sensitive search. (But how do I search for an all-lowercase string case-sensitively?) 
 
-![1]({{ site.baseurl }}/assets/L01/Pictures/08.png)
+<div class="slide">
+  <h1>UI Hall of Fame or Shame?</h1>
+  <img src="{{ site.baseurl }}/assets/L01/Pictures/08.png" />
+</div>
+<!-- ![1]({{ site.baseurl }}/assets/L01/Pictures/08.png) -->
 
 XEmacs has menus (the original Emacs didn't). Alas, XEmacs isn't interested in helping users learn incremental search. Instead, it pops up this conventional Find dialog, which scores great on visibility, but lacks the responsiveness, easy reversibility, and fast performance of incremental search. Even worse, it covers up the matches you're trying to find unless you manhandle it out of the way! 
 
-![1]({{ site.baseurl }}/assets/L01/Pictures/09a.png)
-![1]({{ site.baseurl }}/assets/L01/Pictures/09b.png)
+<div class="slide">
+  <h1>UI Hall of Fame or Shame?</h1>
+  <img src="{{ site.baseurl }}/assets/L01/Pictures/09a.png" />
+  <img src="{{ site.baseurl }}/assets/L01/Pictures/09b.png" />
+</div>
+<!-- ![1]({{ site.baseurl }}/assets/L01/Pictures/09a.png) -->
+<!-- ![1]({{ site.baseurl }}/assets/L01/Pictures/09b.png) -->
 
 Finally, we have the much-reviled Microsoft Office Paperclip. 
 
 Clippy was a well-intentioned effort to solve a real usability problem. Users don't read the manual, don't use the online help, and don't know how to find the answers to their problems. Clippy tries to suggest answers to the problem it thinks you're having. 
 
-![1]({{ site.baseurl }}/assets/L01/Pictures/10.png)
+<div class="slide">
+  <h1>You Are Not the User</h1>
+  <img src="{{ site.baseurl }}/assets/L01/Pictures/10.png" />
+  <ul>
+    <li>Most software engineering  is about communicating with  other programmers
+      <ul><li>...who are a lot like you</li></ul>
+    </li>
+    <li>UI is about communicating  with users
+      <ul><li>Users are NOT LIKE YOU</li></ul>
+    </li>
+    <li>The user is ALWAYS right
+      <ul><li>Usability problems are the design’s fault</li></ul>
+    </li>
+  </ul>
+</div>
+<!-- ![1]({{ site.baseurl }}/assets/L01/Pictures/10.png) -->
 
 Unfortunately it's often wrong, often intrusive, and often annoying. 
 
@@ -126,6 +187,29 @@ Unfortunately, user interfaces are not easy to design. You (the developer) are n
 
 The user is always right. Don't blame the user for what goes wrong. If users consistently make mistakes with some part of your interface, take it as a sign that your interface is wrong, not that the users are dumb. This lesson can be very hard for a software designer to swallow! 
 
+<div class="slide">
+  <h1>Don't Expect Users to be Designers</h1>
+  <img src="{{ site.baseurl }}/assets/L01/Pictures/11a.png" />
+  <ul>
+    <li>Telephone handset weight
+      <ul>
+        <li>Users said: it’s fine</li>
+        <li>But they really wanted: lighter</li>
+      </ul>
+    </li>
+    <img src="{{ site.baseurl }}/assets/L01/Pictures/11b.png" />
+    <li># of Google search results
+      <ul>
+        <li>Users said: 30 results</li>
+        <li>But they really wanted: 10</li>
+      </ul>
+    </li>
+    <li>Command abbreviations
+      <ul><li>Users make 2x errors with their  own custom abbreviations</li></ul>
+    </li>
+  </ul>
+</div>
+
 Unfortunately, the user is not always right. Users aren't oracles. They don't always know what they want, or what would help them. In a study conducted in the 1950s, people were asked whether they would prefer lighter telephone handsets, and on average, they said they were happy with the handsets they had (which at the time were made rather heavy for durability). Yet an actual test of telephone handsets, identical except for weight, revealed that people preferred the handsets that were about half the weight that was normal at the time. (Klemmer, Ergonomics, Ablex, 1989, pp 197-201). 
 
 Another example: Google has discovered that when they survey users about how many search results they want per page (10, 20, 30), users overwhelmingly say "30 results". But when Google actually deploys 30-result search pages (as part of an "A/B test", which we'll talk about in a later lecture), usage drops by 20% relative to the conventional 10-result page. Why? Probably because the 30-result page takes a half second longer to load. (http://perspectives.mvdirona.com/2009/10/31/TheCostOfLatency.aspx) 
@@ -136,7 +220,31 @@ It's easy to say, "Yeah, the interface is bad, but users can customize it howeve
 
 <h2 id="definition-of-usability">Usability, Defined</h2>
 
-The property we're concerned with here, usability, is more precise than just how "good" the system is. A system can be good or bad in many ways. 
+<div class="slide">
+  <h1>Usability Defined</h1>
+  <ul>
+    <li><strong>Usability</strong> = how well users can use the system’s functionality</li>
+    <li>Dimensions of usability
+      <ul>
+        <img src="{{ site.baseurl }}/assets/L01/Pictures/12a.png" />
+        <li><strong>Learnability</strong> (L): is it easy to learn?</li>
+        <img src="{{ site.baseurl }}/assets/L01/Pictures/12b.png" />
+        <li><strong>Efficiency</strong> (E): once learned, is it fast to use?</li>
+        <img src="{{ site.baseurl }}/assets/L01/Pictures/12c.png" />
+        <li><strong>Safety</strong> (S): are errors few and recoverable?</li>
+      </ul>
+    </li>
+    <li>Other dimensions are relevant too
+      <ul>
+        <li>Ergonomics: comfort, fatigue</li>
+        <li>Aesthetics: satisfaction, happiness, pleasure</li>
+        <li>But we’ll mostly focus on LES</li>
+      </ul>
+    </li>
+  </ul>
+</div>
+
+The property we're concerned with here, **usability**, is more precise than just how "good" the system is. A system can be good or bad in many ways. 
 
 #### If important requirements are unsatisfied by the system, that's probably a deficiency in functionality, not in usability. 
 
@@ -146,22 +254,152 @@ If the system is very expensive or crashes frequently, those problems certainly 
 
 These aren't the only aspects of a user interface that you might care about (for example, subjective feelings are important too, as is fatigue), but these are the primary ones we'll care about in this class. 
 
-Notice that we can quantify all these measures of usability. Just as we can say algorithm X is faster than algorithm Y on some workload, we can say that interface X is more learnable, or more efficient, or more safe than interface Y for some set of tasks and some class of users, by designing an experiment that measures the two interfaces. 
+Notice that we can **quantify** all these measures of usability. Just as we can say algorithm X is faster than algorithm Y on some workload, we can say that interface X is more learnable, or more efficient, or more safe than interface Y for some set of tasks and some class of users, by designing an experiment that measures the two interfaces. 
+
+<div class="slide">
+  <h1>Usability Dimensions Vary In Importance</h1>
+  <ul>
+    <li>Depends on the user
+      <ul>
+        <li>Novice users need learnability</li>
+        <li>Experts need efficiency</li>
+        <li>But no user is uniformly novice  or expert</li>
+      </ul>
+    </li>
+    <li>Depends on the task
+      <ul>
+        <img src="{{ site.baseurl }}/assets/L01/Pictures/13a.png" />
+        <li>Missile launchers need safety</li>
+        <img src="{{ site.baseurl }}/assets/L01/Pictures/13b.png" />
+        <li>Subway turnstiles need efficiency</li>
+      </ul>
+    </li>
+  </ul>
+</div>
 
 The usability dimensions are not uniformly important for all classes of users, or for all applications. That's one reason why it's important to understand your users, so that you know what you should optimize for. A web site used only once by millions of people—e.g., the national telephone do-not-call registry—has such a strong need for ease of learning, in fact zero learning, that it far outweighs other concerns. A stock trading program used on a daily basis by expert traders, for whom lost seconds translate to lost dollars, must put efficiency above all else.
 
 But users can't be simply classified as novices or experts, either. For some applications (like stock trading), your users may be domain experts, deeply knowledgeable about the stock market, and yet still be novices at your particular application. Even users with long experience using an application may be novices or infrequent users when it comes to some of its features. 
 
+<div class="slide">
+  <h1>Usability Is Only One Attribute of a System</h1>
+  <ul>
+    <li>Software designers have a lot to worry about:
+      <ul>
+        <li>Functionality</li>
+        <li>Performance</li>
+        <li>Cost</li>
+        <li>Security</li>
+        <li>Maintainability</li>
+        <li><strong>Usability</strong></li>
+        <li>Size</li>
+        <li>Reliability</li>
+        <li>Standards</li>
+        <li>Marketability</li>
+      </ul>
+    </li>
+    <li>Many design decisions involve tradeoffs among different attributes</li>
+    <li>We’ll take an extreme position in this class</li>
+  </ul>
+</div>
+
 Usability doesn't exist in isolation, of course, and it may not even be the most important property of some systems. Astronauts may care more about reliability of their navigation computer than its usability; military systems would rather be secure than easy to log into. Ideally these should be false dichotomies: we'd rather have systems that are reliable, secure, and usable. But in the real world, development resources are finite, and tradeoffs must be made. 
 
 In this class, we'll take an extreme position: usability will be our primary goal. Here's a familiar UI design. You've probably used it before, but probably without thinking much about its usability. We're handing some out for you to play with and think about. 
 
+<div class="slide">
+  <h1>Thinking about Usability</h1>
+  <ul>
+    <li>Consider this device’s user interface
+      <ul>
+        <li>Play with its user interface</li>
+        <li>Think about its usability</li>
+        <li>Talk about it with your neighbors</li>
+      </ul>
+    </li>
+    <li>List its <strong>good</strong> and <strong>bad</strong> aspects on  each usability dimension:
+      <ul>
+        <li>Learnability: is it easy to learn?</li>
+        <li>Efficiency: once learned, is it fast to use?</li>
+        <li>Safety: are errors few and recoverable?</li>
+      </ul>
+    </li>
+  </ul>
+</div>
+
+Here’s a familiar UI design.  You’ve probably used it before, but probably without thinking much about its usability.  We’re handing some out for you to play with and think about.
+
 <h2 id="course-overview">Course Overview</h2>
+
+<div class="slide">
+  <h1>What You’ll Learn in 6.813/6.831</h1>
+  <ul>
+    <li>Design principles
+      <ul><li>learnability, visibility, errors, efficiency, ...</li></ul>
+    </li>
+    <li>Design techniques
+      <ul><li>task analysis, prototyping, user testing, ...</li></ul>
+    </li>
+    <li>Implementation techniques
+      <ul><li>MVC, output, input, layout, color, typography, ...</li></ul>
+    </li>
+    <li>Research methods (6.831G only)
+      <ul><li>experiment design &amp; analysis.</li></ul>
+    </li>
+  </ul>
+</div>
 
 This course will be structured as four threads of lectures: design principles; design techniques; implementation techniques; and research methods. You have to gain experience in the first three in order to do your group project, which takes the entire semester, and the fourth is necessary for the 6.831 version of the course, which introduces graduate students to research in HCI. 
 
 Each lecture will be accompanied by lecture notes available on the course web site.
 
+<div class="slide">
+  <h1>What You’ll Get From 6.813/6.831</h1>
+  <ul>
+    <li>A sense for usability
+      <ul>
+        <li>some knowledge of human capabilities</li>
+        <li>design principles and patterns for better usability</li>
+      </ul>
+    </li>
+    <li>A process for building usable interfaces
+      <ul>
+        <li>cheap prototypes</li>
+        <li>early and regular feedback from users</li>
+        <li>iterative design</li>
+      </ul>
+    </li>
+    <li>Experience with GUI implementation
+      <ul><li> HTML/Javascript</li></ul>
+    </li>
+    <li>(6.831G) Preparation for HCI research
+      <ul>
+        <li>controlled experiments</li>
+        <li>current HCI research topics</li>
+      </ul>
+    </li>
+  </ul>
+</div>
+
 Here are the key objectives of the course. This is what I hope you'll take away from the class. 
+
+<div class="slide">
+  <h1>Course Structure</h1>
+  <ul>
+    <li>See course website for:
+      <ul>
+        <li>Lecture notes</li>
+        <li>Grading policy</li>
+        <li>Calendar</li>
+        <li>Group project</li>
+        <li>Problem sets &amp; homework</li>
+        <li>Automatic extension policy</li>
+        <li>Piazza forum</li>
+        <li>NB annotations</li>
+        <li>Collaboration policy</li>
+      </ul>
+    </li>
+  </ul>
+</div>
 
 Administrivia can be found on the [Stellar course website](http://stellar.mit.edu/S/course/6/sp14/6.813/index.html). 

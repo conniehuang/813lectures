@@ -228,6 +228,27 @@ header.lecture-header {
   }
 }
 
+.slide {
+  border: 1px solid $gray;
+  padding: 40px 50px 50px 50px;
+  width: 75%;
+  margin: 0 auto;
+  h1 {
+    color: $teal;
+    font-size: 1.5em;
+    line-height: 1em;
+  }
+  .caption{
+    font-size: 0.8em;
+    font-style: italic;
+    line-height: 0.8em;
+    text-align: center;
+  }
+  ul > li > ul {
+    margin-left: 25px;
+  }
+}
+
 @media print {
   #notes {
     width: 100%;
@@ -237,5 +258,9 @@ header.lecture-header {
   }
   .print-hide{
     display: none;
+  }
+
+  header.lecture-header{
+    padding-bottom: 40px;
   }
 }

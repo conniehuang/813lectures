@@ -10,24 +10,71 @@ sections: [Consistency, Affordances, Feedback, Information scent]
 pdf: "L03/L03-learnability.pdf"
 picoquiz: "http://courses.csail.mit.edu/6.831/2013/picoquiz?lectureId=3"
 ---
+<h2 id="consistency">Consistency</h2>
 
-Learning Approaches
----------------------
+<div class="slide">
+  <h1>UI Hall of Fame or Shame?</h1>
+</div>
+
 This Flash-driven web site is the [Museum of Modern Art’s Workspheres exhibition](http://www.moma.org/ exhibitions/2001/workspheres/), a collection of objects related to the modern workplace. This is its main menu. Mousing over any icon makes its label appear (the yellow note shown), and clicking brings up a picture of the object.
 
 Go to the site and play with it, and we’ll talk about its learnability in class.
 
 What real-world metaphor is used by this interface? How well does it do with knowledge in the head vs. knowledge in the world?
 
-There’s a general principle of learnability: *consistency*. This rule is often given the hifalutin’ name the Principle of Least Surprise, which basically means that you shouldn’t surprise the user with the way a command or interface object works. Similar things should look, and act, in similar ways. Conversely, different things should be visibly different.
+<div class="slide">
+  <h1>Consistency</h1>
 
-There are three kinds of consistency you need to worry about: internal consistency within your application; external consistency with other applications on the same platform; and metaphorical consistency with your interface metaphor or similar real-world objects.
+  <ul>
+    <li>Similar things should look and act the same</li>
+    <li>Different things should look different
+      <ul><li>also called the principle of “least surprise”</li></ul></li>
+      <li>Consistency allows the user to transfer their existing knowledge easily to a new UI</li>
+  </ul>
+</div>
+
+There’s a general principle of learnability: **consistency**. This rule is often given the hifalutin’ name the Principle of Least Surprise, which basically means that you shouldn’t surprise the user with the way a command or interface object works. Similar things should look, and act, in similar ways. Conversely, different things should be visibly different.
+
+<div class="slide">
+  <h1>
+    Kinds of Consistency
+  </h1>
+  <ul>
+    <li><strong>Internal</strong>: with itself</li>
+    <li><strong>External</strong>: with other UIs or the real world</li>
+    <li><strong>Metaphorical</strong>: with the chosen interface metaphor</li>
+  </ul>
+</div>
+
+There are three kinds of consistency you need to worry about: **internal consistency** within your application; **external consistency** with other applications on the same platform; and **metaphorical consistency** with your interface metaphor or similar real-world objects.
 
 The RealCD interface has problems with both metaphorical consistency (CD jewel cases don’t play; you don’t open them by pressing a button on the spine; and they don’t open as shown), and with external consistency (the player controls aren’t arranged horizontally as they’re usually seen; and the track list doesn’t use the same scrollbar that other applications do). 
 
+<div class="slide">
+  <h1>
+    Metaphors
+  </h1>
+  <ul>
+    <li>Advantages
+      <ul>
+        <li>Highly learnable when appropriate</li>
+        <li>Hooks into user’s existing mental models very easily</li>
+      </ul>
+    </li>
+    <li>Dangers
+      <ul>
+        <li>Often hard for designers to find</li>
+        <li>May be deceptive</li>
+        <li>May be constraining</li>
+        <li>Metaphor always breaks down</li>
+      </ul>
+    </li>
+  </ul>
+</div>
+
 Metaphors are one way you can bring the real world into your interface. We started out by talking about RealCD, an example of an interface that uses a strong metaphor in its interface. A well-chosen, well-executed metaphor can be quite effective and appealing, but be aware that metaphors can also mislead. A computer interface must deviate from the metaphor at some point—otherwise, why aren’t you just using the physical object instead? At those deviation points, the metaphor may do more harm than good. For example, it’s easy to say “a word processor is like a typewriter,” but you shouldn’t really use it like a typewriter. Pressing Enter every time the cursor gets close to the right margin, as a typewriter demands, would wreak havoc with the word processor’s automatic word-wrapping.
 
-The advantage of metaphor is that you’re borrowing a conceptual model that the user already has experience with. A metaphor can convey a lot of knowledge about the interface model all at once. It’s a notebook. It’s a CD case. It’s a desktop. It’s a trashcan.
+The advantage of metaphor is that you’re borrowing a conceptual model that the user already has experience with. A metaphor can convey a lot of knowledge about the interface model all at once. It’s a *notebook*. It’s a *CD case*. It’s a *desktop*. It’s a *trashcan*.
 
 Each of these metaphors carries along with it a lot of knowledge about the parts, their purposes, and their interactions, which the user can draw on to make guesses about how the interface will work.
 
@@ -43,23 +90,54 @@ The biggest problem with metaphorical design is that your interface is presumabl
 
 Most of all, using a metaphor doesn’t save an interface that does a bad job communicating itself to the user. Although RealCD’s model was metaphorical—it opened like a CD case, and it had a liner notes booklet inside the cover—these features had such poor visibility and perceived affordances that they were ineffective. 
 
-Another important principle of interface communication is natural mapping of functions to controls.
+<div class="slide">
+<h1>Natural Mapping: Consistency of Layout</h1>
+<ul>
+<li>When possible, the physical arrangement of controls should match arrangement of function</li>
+<li>Best mapping is direct, but natural mappings don’t have to be direct if they have an easy mental model</li>
+</ul>
+</div>
+
+Another important principle of interface communication is **natural mapping** of functions to controls.
 
 Consider the spatial arrangement of a light switch panel. How does each switch correspond to the light it controls? If the switches are arranged in the same fashion as the lights themselves, it is much easier to learn which switch controls which light.
 
 Direct mappings are not always easy to achieve, since a control may be oriented differently from the function it controls. Light switches are mounted vertically, on a wall; the lights themselves are mounted horizontally, on a ceiling. So the switch arrangement may not correspond directly to a light arrangement.
 
-Other good examples of mapping include: • Stove burners. Many stoves have four burners arranged in a square, and four control knobs arranged in a row. Which knobs control which burners? Most stoves don’t make any attempt to provide a natural mapping. • Car turn signals. The turn signal switch in most cars is a stalk that moves up and down, but the function it controls is a signal for left or right turn. So the mapping is not direct, but it is nevertheless natural. Why? • An audio mixer for DJs (proposed by Max Van Kleek for the Hall of Fame) has two sets of identical controls, one for each turntable being mixed. The mixer is designed to sit in between the turntables, so that the left controls affect the turntable to the left of the mixer, and the right controls affect the turntable to the right. The mapping here is direct. • The controls on the RealCD interface don’t have a natural mapping. Why not? • The Segway’s controls have a direct mapping. Why? • Here’s a meta question about these lecture notes. What’s wrong with the mapping of this bulleted list with respect to the slide above?
+Other good examples of mapping include:
+
+- Stove burners. Many stoves have four burners arranged in a square, and four control knobs arranged in a row. Which knobs control which burners? Most stoves don’t make any attempt to provide a natural mapping.
+- Car turn signals. The turn signal switch in most cars is a stalk that moves up and down, but the function it controls is a signal for left or right turn. So the mapping is not direct, but it is nevertheless natural. Why?
+- An audio mixer for DJs (proposed by Max Van Kleek for the Hall of Fame) has two sets of identical controls, one for each turntable being mixed. The mixer is designed to sit in between the turntables, so that the left controls affect the turntable to the left of the mixer, and the right controls affect the turntable to the right. The mapping here is direct.
+- The controls on the RealCD interface don’t have a natural mapping. Why not? • The Segway’s controls have a direct mapping. Why?
+- Here’s a meta question about these lecture notes. What’s wrong with the mapping of this bulleted list with respect to the slide above?
 
 Here’s a quick exercise. Consider the lights in your room. Design a panel of light switches to control the room's lights, for installation next to one of the entrance doors. Devise a natural mapping between your switch panel and the lights it controls, so that a user can easily learn and remember how to use it. Don't stop with just one design, but sketch out a few.
 
-A few things to think about: (1) It may not make sense to control every light individually. How should the lights be grouped? (2) Think about consistency. Will your panel be recognizable as light switches from across the room? On the other hand, are there better choices than the standard North American flip switches (3) If you use flip switches, how should they be oriented?
+A few things to think about:
+
+1. It may not make sense to control every light individually. How should the lights be grouped?
+2. Think about consistency. Will your panel be recognizable as light switches from across the room? On the other hand, are there better choices than the standard North American flip switches (3) If you use flip switches, how should they be oriented?
+
+<div class="slide">
+  <h1>Internal Consistency in Wording</h1>
+</div>
 
 Another important kind of consistency, often overlooked, is in wording. Use the same terms throughout your user interface. If your interface says “share price” in one place, “stock price” in another, and “stock quote” in a third, users will wonder whether these are three different things you’re talking about. Don’t get creative when you’re writing text for a user interface; keep it simple and uniform, just like all technical writing.
 
 Here are some examples from the Course VI Underground Guide web site—confusion about what’s a “review” and what’s an “evaluation”. 
 
-External consistency in wording is important too—in other words, speak the user’s language as much as possible, rather than forcing them to learn a new one. If the user speaks English, then the interface should also speak English, not Geekish. Technical jargon should be avoided. Use of jargon reflects aspects of the system model creeping up into the interface model, unnecessarily. How might a user interpret the dialog box shown here? One poor user actually read type as a verb, and dutifully typed M-I-S-M-A-T-C-H every time this dialog appeared. The user’s reaction makes perfect sense when you remember that most computer users do just that, type, all day. But most programmers wouldn’t even think of reading the message that way. Yet another example showing that you are not the user.
+<div class="slide">
+<h1>External Consistency in Wording:  Speak the User's Language</h1>
+
+<ul>
+<li>Use common words, not techie jargon
+<ul><li>But use domain-specific terms where appropriate</li></ul></li>
+<li>Allow aliases/synonyms in command languages</li>
+</ul>
+</div>
+
+**External consistency** in wording is important too—in other words, speak the user’s language as much as possible, rather than forcing them to learn a new one. If the user speaks English, then the interface should also speak English, not Geekish. Technical jargon should be avoided. Use of jargon reflects aspects of the system model creeping up into the interface model, unnecessarily. How might a user interpret the dialog box shown here? One poor user actually read type as a verb, and dutifully typed M-I-S-M-A-T-C-H every time this dialog appeared. The user’s reaction makes perfect sense when you remember that most computer users do just that, type, all day. But most programmers wouldn’t even think of reading the message that way. Yet another example showing that you are not the user.
 
 Technical jargon should only be used when it is specific to the application domain and the expected users are domain experts. An interface designed for doctors shouldn’t dumb down medical terms.
 
@@ -69,19 +147,53 @@ Incidentally, there seems to be a contradiction between these guidelines. Speaki
 
 But Consistency in Wording argued for only one command name, lest the user wonder whether these are three different commands that do different things. One way around the impasse is to look at the context in which you’re applying the heuristic. When the user is talking, the interface should make a maximum effort to understand the user, allowing synonyms and aliases. When the interface is speaking, it should be consistent, always using the same name to describe the same command or object. What if the interface is smart enough to adapt to the user—should it then favor matching its output to the user’s vocabulary (and possibly the user’s inconsistency) rather than enforcing its own consistency? Perhaps, but adaptive interfaces are still an active area of research, and not much is known.
 
-To answer the picoquiz questions in this lecture, go to: http://courses.csail.mit.edu/6.831/2013/picoquiz?lectureId=3
+<div class="slide">
+<h1>Picoquiz</h1>
+
+<ul>
+<li>What kind of consistency is natural mapping? (<em>choose one</em>)
+<ul><li>internal consistency</li>
+<li>metaphorical consistency</li>
+<li>external consistency</li>
+<li>foolish consistency</li></ul></li>
+</ul>
+</div>
+
+<a href="{{ page.picoquiz }}" class="button">Take picoquiz <i class="fa fa-check-square-o"></i></a>
+
+<h2 id="affordances">Affordances</h2>
+
+<div class="slide">
+  <h1>Affordances</h1>
+  <ul>
+  <li>Perceived and actual properties of a thing that determine how the thing could be used</li>
+  <li>Perceived vs. actual </li>
+  </ul>
+</div>
 
 **Affordance** refers to “the perceived and actual properties of a thing”, primarily the properties that determine how the thing could be operated. Chairs have properties that make them suitable for sitting; doorknobs are the right size and shape for a hand to grasp and turn. A button’s properties say “push me with your finger.”
 
-Scrollbars say that they continuously scroll or pan something that you can’t entirely see. Affordances are how an interface communicates nonverbally, telling you how to operate it.
+Scrollbars say that they continuously scroll or pan something that you can’t entirely see. Affordances are how an interface communicates *nonverbally*, telling you how to operate it.
 
 Affordances are rarely innate—they are learned from experience. We recognize properties suitable for sitting on the basis of our long experience with chairs. We recognize that listboxes allow you to make a selection because we’ve seen and used many listboxes, and that’s what they do.
 
-Note that perceived affordance is not the same as actual affordance. A facsimile of a chair made of papiermache has a perceived affordance for sitting, but it doesn’t actually afford sitting: it collapses under your weight. Conversely, a fire hydrant has no perceived affordance for sitting, since it lacks a flat, human-width horizontal surface, but it actually does afford sitting, albeit uncomfortably.
+Note that *perceived* affordance is not the same as actual affordance. A facsimile of a chair made of papiermache has a perceived affordance for sitting, but it doesn’t actually afford sitting: it collapses under your weight. Conversely, a fire hydrant has no perceived affordance for sitting, since it lacks a flat, human-width horizontal surface, but it actually does afford sitting, albeit uncomfortably.
 
 Recall the textbox from our first lecture, whose perceived affordance (type a time here) disagrees with what it can actually do (you can’t type, you have to push the Set Time button to change it). Or the door handle on the right, whose nonverbal message (perceived affordance) clearly says “pull me” but whose label says “push” (which is presumably what it actually affords). The parts of a user interface should agree in perceived and actual affordances.
 
 The original definition of affordance (from psychology) referred only to actual properties, but when it was imported into human computer interaction, perceived properties became important too. Actual ability without any perceivable ability is an undesirable situation. We wouldn't call that an affordance. Suppose you're in a room with completely blank walls. No sign of any exit—it's missing all the usual cues for a door, like an upright rectangle at floor level, with a knob, and cracks around it, and hinges where it can pivot. Completely blank walls. But there is actually an exit, cleverly hidden so that it's seamless with the wall, and if you press at just the right spot it will pivot open. Does the room have an "affordance" for exiting? To a user interface designer, no, it doesn't, because we care about how the room communicates what should be done with it. To a psychologist (and perhaps an architect and a structural engineer), yes, it does, because the actual properties of the room allow you to exit, if you know how.
+
+<div class="slide">
+<h1>Use Appropriate Affordances</h1>
+
+<ul>
+<li>Buttons &amp; links</li>
+<li>Drop-down arrows</li>
+<li>Texture</li>
+<li>Mouse cursor</li>
+<li>Highlight on mouseover</li>
+</ul>
+</div>
 
 Here are some more examples of commonly-seen affordances in graphical user interfaces. Buttons and hyperlinks are the simplest form of affordance for actions. Buttons are typically metaphorical of real-world buttons, but the underlined hyperlink has become an affordance all on its own, without reference to any physical metaphor.
 
@@ -93,15 +205,52 @@ Mouse cursor changes are another kind of affordance—a visible property of a gr
 
 Finally, the visible highlighting that you get when you move the mouse over a menu item or a button is another kind of affordance. Because the object visibly responds to the presence of the mouse, it suggests that you can interact with it by clicking. 
 
+<div class="slide">
+<h1>Evolution of Hyperlinks and Buttons</h1>
+</div>
+
 Hyperlinks and buttons have evolved and changed significantly. The top row shows how hyperlinks and buttons looked circa 1995 (on NCSA Mosaic, the first widely-used web browser, which used the Motif graphical user interface toolkit). What properties did they have that distinguished them and made them clickable? Which of those properties have been lost over time, presumably as users become more familiar with these objects? The drive toward simplicity is a constant force in aesthetics and user interface design, so affordances tend to diminish rather than increase.
 
 The bottom row shows a hyperlink which has been simplified too far, and an HTML button that has been not only simplified but also lost its mouse cursor affordance. This goes too far. 
 
+<div class="slide">
+<h1>What's Wrong With This?</h1>
+</div>
+
+<div class="slide">
+<h1>What's Wrong With This?</h1>
+</div>
+
+<div class="slide">
+<h1>What's Wrong With This?</h1>
+</div>
+
 The story of affordances isn’t purely reductionist. Sometimes you can’t boil the affordance down to a single property like its color or a 3D border. This thing here is a button; but it’s so large, and has such a disproportionate relationship between the area and the label, that it loses its sense of clickability. 
 
-If the user is trying to view all the events at once on the CPW website, the user may end up clicking through all the days individually. It turns out that the graphic in the center page is actually a link to a nifty search interface that lets the user look at all the event listings in addition to other cool functionalities, but the graphic doesn’t have strong affordances for interaction. It’s mostly a big logo, so what does a typical user do? Glance at it and then ignore it, scanning the page instead for things that look like actions, such as the clearly marked hyperlinks at the bottom. The "click here to search" text in the logo doesn’t work.
+<div class="slide">
+<h1>Find the Affordances</h1>
+</div>
+
+<div class="slide">
+<h1>What Can You Do With This Page?</h1>
+</div>
+
+If the user is trying to view all the events at once on the CPW website, the user may end up clicking through all the days individually. It turns out that the graphic in the center page is actually a link to a nifty search interface that lets the user look at all the event listings in addition to other cool functionalities, but the graphic doesn’t have strong affordances for interaction. It’s mostly a big logo, so what does a typical user do? Glance at it and then ignore it, scanning the page instead for things that look like actions, such as the clearly marked hyperlinks at the bottom. The "click here to search" text in the logo *doesn’t work*.
 
 It is very easy to miss the search interface altogether because of the poor visibility of the search feature and the lack of affordances that the graphic is a link. (example and explanation due to Dina Betser)
+
+<div class="slide">
+<h1>Try It: Playing with Affordances</h1>
+
+<ul>
+<li>Use Javascript to obscure all the text on a page</li>
+<li>Visit several pages, e.g.:
+<ul><li>MIT’s home page</li>
+<li>6.813/6.831 home page</li></ul></li>
+<li>What do the affordances tell you nonverbally?</li>
+<li>Are any of the affordances  lying to you? </li>
+</ul>
+</div>
 
 Here’s an exercise that you can try with your favorite webpage. It’s a chunk of Javascript that changes all the text on the page to X’s, so that all you can see is what the page is telling you nonverbally, using affordances. (It doesn’t affect text that’s rendered in an image, unfortunately, so this has the interesting side effect of discovering pages with poor accessibility and poor internationalization.)
 
@@ -109,9 +258,34 @@ Here’s the Javascript code: var result = document.evaluate("//text()", documen
 
 One way to use it is to open your browser’s Javascript console and just paste the code in; it will change the current page. Another way to use it is to create a new bookmark in your browser, and use as the URL javascript: followed by the code given above. Clicking on this bookmark will run the Javascript on the current page. (This is called a bookmarklet, and it’s an one way to modify web pages you don’t own.) 
 
-To answer the picoquiz questions in this lecture, go to: http://courses.csail.mit.edu/6.831/2013/picoquiz?lectureId=3 
+<div class="slide">
+<h1>Picoquiz</h1>
 
-Hand-in-hand with affordances is feedback: how the system changes visibly when you perform an action.
+<ul>
+<li>Which of the following are affordances for sleeping?  (<strong>choose all good answers</strong>)
+<ul><li>a soft surface</li>
+<li>night time</li>
+<li>scorpions</li>
+<li>horizontalness </li></ul></li>
+</ul>
+</div>
+
+<a href="{{ page.picoquiz }}" class="button">Take picoquiz <i class="fa fa-check-square-o"></i></a>
+
+<h2 id="feedback">Feedback</h2>
+<div class="slide">
+<h1>Actions Should Have Immediately Visible Effects</h1>
+
+<ul>
+<li>Low-level feedback
+<ul><li>e.g. push button</li></ul></li>
+<li>High-level feedback
+<ul><li>model state changes</li>
+<li>new web page starts loading</li></ul></li>
+</ul>
+</div>
+
+Hand-in-hand with affordances is **feedback**: how the system changes visibly when you perform an action.
 
 When the user invokes a part of the interface, it should appear to respond. Push buttons should depress and release. Scrollbar thumbs and dragged objects should move with the mouse cursor. Pressing a key should make a character appear in a textbox.
 
@@ -119,9 +293,21 @@ Low-level feedback is provided by a view object itself, like push-button feedbac
 
 High-level feedback is the actual result of the user’s action, like changing the state of the model. 
 
-One interesting effect of human perceptual system is perceptual fusion. Here’s an intuition for how fusion works. Our “perceptual processor” runs at a certain frame rate, grabbing one frame (or picture) every cycle, where each cycle takes Tp seconds. Two events occurring less than the cycle time apart are likely to appear in the same frame. If the events are similar—e.g., Mickey Mouse appearing in one position, and then a short time later in another position—then the events tend to fuse into a single perceived event—a single Mickey Mouse, in motion.
+<div class="slide">
+<h1>Perceptual Fusion</h1>
 
-The cycle time of the perceptual processor can be derived from a variety of psychological experiments over decades of research (summarized in Card, Moran, Newell, The Psychology of Human-Computer Interaction, Lawrence Erlbaum Associates, 1983). 100 milliseconds is a typical value which is useful for a rule of thumb.
+<ul>
+<li>Two stimuli within the same perceptual cycle (T<sub>p</sub> ~ 100ms [50-200 ms]) appear <strong>fused</strong></li>
+<li>Consequences
+<ul><li>1/ T<sub>p</sub> frames/sec is enough to perceive a moving picture (10 fps OK, 20 fps smooth)</li>
+<li>Computer response &lt; T<sub>p</sub> feels instantaneous</li>
+<li>Causality is strongly influenced by fusion</li></ul></li>
+</ul>
+</div>
+
+One interesting effect of human perceptual system is **perceptual fusion**. Here’s an intuition for how fusion works. Our “perceptual processor” runs at a certain frame rate, grabbing one frame (or picture) every cycle, where each cycle takes Tp seconds. Two events occurring less than the cycle time apart are likely to appear in the same frame. If the events are similar—e.g., Mickey Mouse appearing in one position, and then a short time later in another position—then the events tend to fuse into a single perceived event—a single Mickey Mouse, in motion.
+
+The cycle time of the perceptual processor can be derived from a variety of psychological experiments over decades of research (summarized in Card, Moran, Newell, *The Psychology of Human-Computer Interaction*, Lawrence Erlbaum Associates, 1983). 100 milliseconds is a typical value which is useful for a rule of thumb.
 
 But it can range from 50 ms to 200 ms, depending on the individual (some people are faster than others) and on the stimulus (for example, brighter stimuli are easier to perceive, so the processor runs faster).
 
@@ -130,6 +316,17 @@ Perceptual fusion is responsible for the way we perceive a sequence of movie fra
 Perceptual fusion also gives an upper bound on good computer response time. If a computer responds to a user’s action within Tp time, its response feels instantaneous with the action itself. Systems with that kind of response time tend to feel like extensions of the user’s body. If you used a text editor that took longer than Tp response time to display each keystroke, you would notice.
 
 Fusion also strongly affects our perception of causality. If one event is closely followed by another—e.g., pressing a key and seeing a change in the screen—and the interval separating the events is less than Tp, then we are more inclined to believe that the first event caused the second.
+
+<div class="slide">
+<h1>Response Time</h1>
+
+<ul>
+<li>&lt; 0.1 s: seems instantaneous</li>
+<li>0.1-1 s: user notices the delay</li>
+<li>1-5 s: display busy indicator</li>
+<li>> 1-5 s: display progress bar</li>
+</ul>
+</div>
 
 Perceptual fusion provides us with some rules of thumb for responsive feedback.
 
@@ -141,49 +338,128 @@ One second is a typical turn-taking delay in human conversation—the maximum co
 
 Note that progress bars don’t necessarily have to be accurate. (This one is actually preposterous—who cares about 3 significant figures of progress?) An effective progress bar has to show that progress is being made, and allow the user to estimate completion time at least within an order of magnitude—a minute? 10 minutes? an hour? a day? 
 
+<div class="slide">
+<h1>Feedback Visibility Depends on Locus of Attention</h1>
+
+<ul>
+<li><strong>Spotlight of attention</strong>: attention focuses on one input channel (e.g. area of visual field) at a time</li>
+<li>Does the user’s locus of attention include:
+<ul><li>Caps Lock light on keyboard?</li>
+<li>Status bar?</li>
+<li>Menu bar?</li>
+<li>Mouse cursor?</li></ul></li>
+</ul>
+</div>
+
 The metaphor used by cognitive psychologists for how attention behaves in perception is the spotlight: you can focus your attention on only one input channel in your environment at a time. This input channel might be a location in your visual field, or it might be a location or voice in your auditory field. You can shift your attention to another channel, but at the cost of giving up your previous focus.
 
 So when you’re thinking about how to make something important visible, you should think about where the user’s attention is likely to be focused—their document? The text cursor? The animated banner ads on the web site?
 
-Raskin, The Humane Interface, 2000 has a good discussion of attention as it relates to mode visibility. Raskin argues that we should think of it as the locus of attention, rather than focus, to emphasize that it’s merely the place where the user’s attention happens to be, and doesn’t necessarily reflect any conscious focusing process on the user’s part.
+Raskin, *The Humane Interface*, 2000 has a good discussion of attention as it relates to mode visibility. Raskin argues that we should think of it as the locus of attention, rather than focus, to emphasize that it’s merely the place where the user’s attention happens to be, and doesn’t necessarily reflect any conscious focusing process on the user’s part.
 
-The status bar probably isn’t often in the locus of attention. There’s an amusing story (possibly urban legend) about a user study mainly involving ordinary spreadsheet editing tasks, in which every five minutes the status bar would display “There’s a $50 bill taped under your chair. Take it!” In a full day of testing, more than a dozen users, nobody took the money. (Alan Cooper, The Inmates Are Running the Asylum.)
+The status bar probably isn’t often in the locus of attention. There’s an amusing story (possibly urban legend) about a user study mainly involving ordinary spreadsheet editing tasks, in which every five minutes the status bar would display “There’s a $50 bill taped under your chair. Take it!” In a full day of testing, more than a dozen users, nobody took the money. (Alan Cooper, *The Inmates Are Running the Asylum*.)
 
 But there’s also evidence that many users pay no attention to the status bar when they’re considering whether to click on a hyperlink; in other words, the URL displayed in the status bar plays little or no role in the link’s information scent (which we’ll discuss next). Phishing web sites (fake web sites that look like major sites like eBay or PayPal or CitiBank and try to steal passwords and account informations) exploit this to hide their stinky links.
 
-The Mac OS menubar has a similar problem—it’s at the periphery of the screen, so it’s likely to be far from the user’s locus of attention. Since the menubar is the primary indicator of which application is currently active—in Mac OS, an application can be active even if it has no windows on the screen—users who use keyboard shortcuts heavily may make mode errors—in this case, sending a keyboard command to the wrong application—because they aren’t attending to the state of the menubar.
+The Mac OS menubar has a similar problem—it’s at the periphery of the screen, so it’s likely to be far from the user’s locus of attention. Since the menubar is the primary indicator of which application is currently active—in Mac OS, an application can be active even if it has no windows on the screen—users who use keyboard shortcuts heavily may make **mode errors**—in this case, sending a keyboard command to the wrong application—because they aren’t attending to the state of the menubar.
 
-What about the shape of the mouse cursor? Surely that’s reliably in the user’s locus of attention? It may be likely to be in the user’s center of vision (or fovea), but that doesn’t necessarily mean they’re paying attention to the cursor, as opposed to the objects they’re working with. Raskin describes a mode error he makes repeatedly with his favorite drawing program, despite the fact that the mode is clearly indicated by a different mouse cursor. 
+What about the shape of the mouse cursor? Surely that’s reliably in the user’s locus of attention? It may be likely to be in the user’s center of vision (or **fovea**), but that doesn’t necessarily mean they’re paying attention to the cursor, as opposed to the objects they’re working with. Raskin describes a mode error he makes repeatedly with his favorite drawing program, despite the fact that the mode is clearly indicated by a different mouse cursor. 
+
+<div class="slide">
+<h1>Visible Navigation State</h1>
+
+<ul>
+<li>Breadcrumbs</li>
+<li>Pagination</li>
+<li>Tabs</li>
+</ul>
+</div>
 
 So far we’ve been looking at how to make the set of available actions visible. Let’s turn now to visualizing the state of the system.
 
-Navigation is one important kind of state to visualize—i.e., where am I now? On the Web, in particular, users are in danger of getting lost as they move around in deep, information-rich sites. We’ve already seen in previous lectures a couple of patterns for preventing this by visualizing the user’s location. Breadcrumb trails show where you are as a path through the site’s hierarchy (e.g. Travel, Guides, North America), in a very compact form. Showing the hierarchy in a tree widget with the current node highlighted is another way to do it, but costs more screen space and complexity.
+**Navigation** is one important kind of state to visualize—i.e., where am I now? On the Web, in particular, users are in danger of getting lost as they move around in deep, information-rich sites. We’ve already seen in previous lectures a couple of patterns for preventing this by visualizing the user’s location. Breadcrumb trails show where you are as a path through the site’s hierarchy (e.g. Travel, Guides, North America), in a very compact form. Showing the hierarchy in a tree widget with the current node highlighted is another way to do it, but costs more screen space and complexity.
 
 Pagination and highlighted tabs are similar patterns that show the user where they are, along with some context of where else they could go. 
 
-It hardly seems necessary to say that the system model should be visualized in an interface. That’s one of the essential properties of a direct-manipulation interface: a continuous visual representation of the state of the application.
+<div class="slide">
+<h1>Visible Model State</h1>
+
+<ul>
+<li>Continuous visual representation of model
+<ul><li>What to visualize should be guided by the user’s tasks</li></ul></li>
+</ul>
+</div>
+
+It hardly seems necessary to say that the system **model** should be visualized in an interface. That’s one of the essential properties of a direct-manipulation interface: a continuous visual representation of the state of the application.
 
 The hard design issues in model visibility tend to lie in what to make visible (i.e. which aspects of the model), and how to display it (i.e., in what representation). We’ll discuss the how, the visual representation, in much greater detail in a future lecture on graphic design.
 
 The what may involve a tension between visibility and simplicity; visibility argues for showing more, but simplicity argues for showing less. Understanding the users and their tasks (a technique called task analysis which we’ll discuss in a future lecture) helps resolve the tension. For example, Microsoft Word displays a word count continuously in the status bar, since counting words is an important subtask for many users of Word (such as students, journalists, and book authors). Making it always visible saves the need to invoke a word-count command.
 
+<div class="slide">
+<h1>Visible View State</h1>
+
+<ul>
+<li>Selection highlight</li>
+<li>Selection handles</li>
+<li>Drag &amp; drop</li>
+</ul>
+</div>
+
 Still other state is stored in the view (or controller), not in the backend model. This “view state” is the current state of the user’s interaction with the interface.
 
 Selections are particularly important. When the user selects an object to operate on, highlight the object somehow. Don’t just leave the selection invisible and implicit. Selection highlighting provides important feedback that the selection operation was successful; it also shows the current state of the selection if the user has forgotten what was previously selected.
 
-A common technique for showing a selection highlight in text is reverse video (white text on dark colored background). For shapes and objects, the selection highlight may be done by selection handles, or by a dotted or animated border around the object (“crawling ants”). Selection handles are appealing because they do double-duty—both indicating the selection, and providing visible affordances for resizing the object.
+A common technique for showing a selection highlight in text is reverse video (white text on dark colored background). For shapes and objects, the selection highlight may be done by **selection handles**, or by a dotted or animated border around the object (“crawling ants”). Selection handles are appealing because they do double-duty—both indicating the selection, and providing visible affordances for resizing the object.
 
-When the user selects objects or text and then operates on the selection with a command, keep it selected, especially if it changes appearance drastically or moves somewhere else. If the selected thing is offscreen when the user finally invokes a command on it, scroll it back into view. That allows the user to follow what happened to the object, so they can easily evaluate its final state. Similarly, if the user makes a selection and then invokes an unrelated command (like scrolling or sorting or filtering, none of which actually use the selection), preserve the selection, even if it means you have to remember it and regenerate it. User selections, like user data, are precious, and contribute to the visibility of what the system is doing.
+When the user selects objects or text and then operates on the selection with a command, **keep it selected**, especially if it changes appearance drastically or moves somewhere else. If the selected thing is offscreen when the user finally invokes a command on it, scroll it back into view. That allows the user to follow what happened to the object, so they can easily evaluate its final state. Similarly, if the user makes a selection and then invokes an unrelated command (like scrolling or sorting or filtering, none of which actually use the selection), **preserve the selection**, even if it means you have to remember it and regenerate it. User selections, like user data, are precious, and contribute to the visibility of what the system is doing.
 
 Another form of view state is the state of an input controller, like a drag & drop operation. Drag & drop is often indicated by a cursor change.
 
+<div class="slide">
+<h1>Useless Feedback vs. Useful Feedback</h1>
+</div>
+
 Feedback is important, but don’t overdo it. This dialog box demands a click from the user. Why? Does the interface need a pat on the back for finishing the conversion? It would be better to just skip on and show the resulting documentation. 
 
-To answer the picoquiz questions in this lecture, go to: http://courses.csail.mit.edu/6.831/2013/picoquiz?lectureId=3 
+<div class="slide">
+  <h1>Picoquiz</h1>
 
-Users depend on visible cues to figure out how to achieve their goals with the least effort. For information gathering tasks, like searching for information on the web, it turns out that this behavior can be modeled much like animals foraging for food. An animal feeding in a natural environment asks questions like: Where should I feed? What should I try to eat (the big rabbit that’s hard to catch, or the little rabbit that’s less filling)? Has this location been exhausted of food that’s easy to obtain, and should I try to move on to a more profitable location? Information foraging theory claims that we ask similar questions when we’re collecting information: Where should I search? Which articles or paragraphs are worth reading? Have I exhausted this source, should I move on to the next search result or a different search? (Pirolli & Card, “Information Foraging in Information Access Environments,” CHI ‘95.)
+  <ul>
+  <li>Which of the following design features play a dual role -- both as an affordance and as feedback?  (<strong>choose all good answers</strong>)
+  <ul><li>selection handles</li>
+  <li>underline appearing on mouse-hover</li>
+  <li>error message appearing in the status bar</li></ul></li>
+  </ul>
+</div>
 
-An important part of information foraging is the decision about whether a hyperlink is worth following—i.e., does this smell good enough to eat? Users make this decision with relatively little information—sometimes only the words in the hyperlink itself, sometimes with some context around it (e.g., a Google search result also includes a snippet of text from the page, the site’s domain name, the length of the page, etc.) These cues are information scent—the visible properties of a link that indicate how profitable it will be to follow the link. (Chi et al, “Using Information Scent to Model User Information Needs and Actions on the Web”, CHI 2001.) 
+<a href="{{ page.picoquiz }}" class="button">Take picoquiz <i class="fa fa-check-square-o"></i></a>
+
+<div class="information-scent">Information Scent</div>
+
+<div class="slide">
+<h1>Information Scent</h1>
+
+<ul>
+<li>Information foraging theory
+<ul><li>Humans gathering information can be modeled like animals gathering food</li>
+<li>Constantly evaluating and making decisions to maximize information collected against cost of obtaining it</li></ul></li>
+<li>Information scent
+<ul><li>Cues on a link that indicate how profitable it will be to follow the link to its destination</li></ul></li>
+</ul>
+</div>
+
+Users depend on visible cues to figure out how to achieve their goals with the least effort. For information gathering tasks, like searching for information on the web, it turns out that this behavior can be modeled much like animals foraging for food. An animal feeding in a natural environment asks questions like: Where should I feed? What should I try to eat (the big rabbit that’s hard to catch, or the little rabbit that’s less filling)? Has this location been exhausted of food that’s easy to obtain, and should I try to move on to a more profitable location? **Information foraging theory** claims that we ask similar questions when we’re collecting information: Where should I search? Which articles or paragraphs are worth reading? Have I exhausted this source, should I move on to the next search result or a different search? (Pirolli & Card, “Information Foraging in Information Access Environments,” *CHI ‘95*.)
+
+An important part of information foraging is the decision about whether a hyperlink is worth following—i.e., does this smell good enough to eat? Users make this decision with relatively little information—sometimes only the words in the hyperlink itself, sometimes with some context around it (e.g., a Google search result also includes a snippet of text from the page, the site’s domain name, the length of the page, etc.) These cues are **information scent**—the visible properties of a link that indicate how profitable it will be to follow the link. (Chi et al, “Using Information Scent to Model User Information Needs and Actions on the Web”, *CHI 2001*.) 
+
+<div class="slide">
+<h1>Give Good Information Scent</h1>
+
+<ul>
+<li>A link should smell like the content it leads to</li>
+</ul>
+</div>
 
 Hyperlinks in your interface—or in general, any kind of feature, including menu commands and toolbar buttons—should provide good, appropriate information scent.
 
@@ -197,11 +473,32 @@ Date, Time, Language, and Regional Options is another example. It might be tempt
 
 Notice that the quality of information scent depends on the user’s particular goal. A design with good scent for one set of goals might fail for another set. For example, if a shopping site has categories for Music and Movies, then where would you look for a movie soundtrack? One solution to this is to put it in both categories, or to provide “See Also” links in each category that direct the user sideways in the hierarchy. 
 
+<div class="slide">
+<h1>Good &amp; Bad Information Scent</h1>
+</div>
+
 Here are some examples from the web. Poor information scent is on the left; much better is on the right.
 
 The first example shows an unfortunately common pathology in web design: the “click here” link. Hyperlinks tend to be highly visible, highly salient, easy to pick out at a glance from the web page—so they should convey specific scent about the action that the link will perform. “Click here” says nothing. Your users won’t read the page, they’ll scan it.
 
 Notice that the quality of information scent depends on the user’s particular goal. A design with good scent for one set of goals might fail for another set. For example, if a shopping site has categories for Music and Movies, then where would you look for a movie soundtrack? One solution to this is to put it in both categories, or to provide “See Also” links in each category that direct the user sideways in the hierarchy.
+
+<div class="slide">
+<h1>Hierarchy of Exploration Costs</h1>
+
+<ul>
+<li>Glance
+<ul><li>affordances, icons, short salient words</li></ul></li>
+<li>Read
+<ul><li>description, keywords</li></ul></li>
+<li>Hover or press
+<ul><li>cursor change, highlight, tooltip, submenu, preview</li></ul></li>
+<li>Click through
+<ul><li>target page, dialog box, or mode</li></ul></li>
+<li>Invoke
+<ul><li>feedback effect on the model state</li></ul></li>
+</ul>
+</div>
 
 For the user, collecting information scent cues is done progressively, with steadily increasing cost.
 
@@ -215,4 +512,25 @@ Clicking through a link or bringing up a dialog box is next, and actually invoki
 
 Exploration is important to learning. But much of this lecture has been about techniques for reducing the costs of exploration, and making the right feature more obvious right away. An interface with very poor affordances will be very expensive to explore. Imagine a webpage whose links aren’t distinguished by underlining or color—you’ve just taken away the Glance, and forced the user to Read or Hover to discover what’s likely to be clickable. Now imagine it in a foreign language (or in the Xxxxxx’s we used in the affordance-stripping example)—you’ve just taken away Read. Now get rid of the mouse cursor feedback—no more Hover, and the user is forced to Click all over the place to explore. Your job as a designer is to make the user’s goal as easy to recognize in your user interface as possible. 
 
+<div class="slide">
+<h1>Lots of scent but hard to scan</h1>
+</div>
+
 Here’s an example of going overboard with information scent. There is so much text in the main links of this page (Search listings..., Advertise..., See..., Browse...) that it interferes with your ability to Glance over the page. A better approach would be to make the links themselves short and simple, and use the smaller text below each link to provide supporting scent. http://rentmonkey.mit.edu/account/home
+
+<div class="slide">
+<h1>Picoquiz</h1>
+
+<p>Suppose the following line appears on a web page.  What are its learnability problems? (<strong>choose all good answers</strong>)</p>
+
+<blockquote>
+  <p><em>Click here</em> for more results.</p>
+</blockquote>
+
+<p>A. bad external consistency
+B. bad metaphorical consistency
+C. bad information scent
+D. bad affordances</p>
+</div>
+
+<a href="{{ page.picoquiz }}" class="button">Take picoquiz <i class="fa fa-check-square-o"></i></a>
