@@ -3,6 +3,8 @@ layout: lecture
 title: Safety
 date: 2014-02-12 18:58:36
 categories: lecture
+permalink: L04-safety
+show-nb: true
 
 lecture-number: 4
 lecturer: ...

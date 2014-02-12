@@ -3,10 +3,13 @@ layout: lecture
 title: Learnability, Part 1
 date: 2014-02-07 18:58:36
 categories: lecture
+permalink: L02-learnability-1
+
 
 lecture-number: 2
 lecturer: Philip Guo
 sections: [Learning approaches, Interaction styles, Conceptual models]
+show-nb: true
 pdf: "L02/L02-learnability.pdf"
 picoquiz: "http://courses.csail.mit.edu/6.831/2013/picoquiz?lectureId=2"
 ---

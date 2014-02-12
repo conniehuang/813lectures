@@ -3,10 +3,12 @@ layout: lecture
 title: Efficiency
 date: 2014-02-14 18:58:36
 categories: lecture
+permalink: L04-efficiency
 
 lecture-number: 5
 lecturer: ...
 sections: [Chunking, Pointing and steering, Shortcuts, Keystroke level model]
+show-nb: true
 pdf: "L04/L04-efficiency.pdf"
 picoquiz: "http://courses.csail.mit.edu/6.831/2013/picoquiz?lectureId=4"
 ---
@@ -338,7 +340,7 @@ It’s worth noting that all these operations are available elsewhere in Windows
 
 <a href="{{ page.picoquiz }}" class="button">Take picoquiz <i class="fa fa-check-square-o"></i></a>
 
-<h2 id="keystroke-level-models">Keystroke level models</h2>
+<h2 id="keystroke-level-model">Keystroke level model</h2>
 
 <div class="slide">
 <h1>Predictive Evaluation</h1>

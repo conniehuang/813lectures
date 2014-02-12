@@ -3,10 +3,12 @@ layout: lecture
 title: Usability
 date: 2014-02-05 18:58:36
 categories: lecture
+permalink: L01-usability
 
 lecture-number: 1
 lecturer: David Karger
 sections: [UI Hall of Fame and Shame, Why UI design is hard, Definition of usability, Course overview]
+show-nb: true
 pdf: "L01/L01-usability.pdf"
 ---
 

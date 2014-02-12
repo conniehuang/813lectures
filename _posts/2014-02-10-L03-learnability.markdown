@@ -3,10 +3,13 @@ layout: lecture
 title: Learnability, Part 2
 date: 2014-02-10 18:58:36
 categories: lecture
+permalink: L03-learnability-2
+
 
 lecture-number: 3
 lecturer: Philip Guo
 sections: [Consistency, Affordances, Feedback, Information scent]
+show-nb: true
 pdf: "L03/L03-learnability.pdf"
 picoquiz: "http://courses.csail.mit.edu/6.831/2013/picoquiz?lectureId=3"
 ---
