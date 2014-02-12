@@ -2,21 +2,14 @@
 layout: base
 ---
 <header class="lecture-header">
-  <h3>
-    <span>Lecture {{ page.lecture-number }}</span> 
-<!--     <span class="lecture-date">{{ page.date | date: '%b %-d, %Y' }}</span> -->
-  </h3>
+  <h3>Lecture {{ page.lecture-number }}</h3> 
   <div class="lecture-info">
     <h1>{{ page.title }}</h1>
-<!--     <h3 class="smallcaps">Lecturer: {{ page.lecturer }}</h3> -->
   </div>
-
   <div class="lecture-buttons print-hide">
     <a href="{{ site.baseurl }}/assets/{{ page.pdf }}" class="button">Download PDF <i class="fa fa-download"></i></a>
-    {% if page.picoquiz %}
-      <a href="{{ page.picoquiz }}" class="button">Take picoquiz <i class="fa fa-check-square-o"></i></a>
-    {% endif %}
   </div> <!-- /.lecture-buttons -->
+  
 </header>
 
 <div class="lecture-content">

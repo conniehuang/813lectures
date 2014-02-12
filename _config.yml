@@ -1,4 +1,6 @@
 name: Your New Jekyll Site
 markdown: redcarpet
+redcarpet:
+  extensions: ["smart"]
 pygments: true
 baseurl: /813lectures

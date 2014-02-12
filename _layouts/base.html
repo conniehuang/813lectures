@@ -15,25 +15,27 @@
 
 <body>
   <div id="sidebar" class="print-hide">
-    <a class="home" href="{{ site.baseurl }}">6.813 / 6.831</a>
-    <ul>
-      {% for post in site.posts reversed %}
-        <li class="lecture">
-          <span class="lecture-title">
-            <a href="{{ site.baseurl }}{{ post.url }}">{{ post.lecture-number }}. {{ post.title }}</a> 
-<!--           <span class="date">{{ post.date | date: '%b %-d' }}</span> -->
-          </span> 
-        </li>
-        <ul>
-          {% for section in post.sections %}
-            {% assign section-split = section | split: ' ' %}
-            {% assign section-url = section-split | join: '-' %}
-            <li class="lecture-section"><a href="{{ site.baseurl }}{{ post.url }}#{{ section-url | downcase }}">{{ section }}</a></li>
-          {% endfor %}
-        </ul>
-      {% endfor %}
-    </ul>
-  </div>
+    <div class="sidebar-contents">
+      <a class="home" href="{{ site.baseurl }}">6.813 / 6.831</a>
+      <ul>
+        {% for post in site.posts reversed %}
+          <li class="lecture">
+            <span class="lecture-title">
+              <a href="{{ site.baseurl }}{{ post.url }}">{{ post.lecture-number }}. {{ post.title }}</a> 
+  <!--           <span class="date">{{ post.date | date: '%b %-d' }}</span> -->
+            </span> 
+          </li>
+          <ul>
+            {% for section in post.sections %}
+              {% assign section-split = section | split: ' ' %}
+              {% assign section-url = section-split | join: '-' %}
+              <li class="lecture-section"><a href="{{ site.baseurl }}{{ post.url }}#{{ section-url | downcase }}">{{ section }}</a></li>
+            {% endfor %}
+          </ul>
+        {% endfor %}
+      </ul>
+    </div><!-- /.sidebar-contents -->
+  </div><!-- /#sidebar -->
 
   <div id="notes">
     {{ content }}
