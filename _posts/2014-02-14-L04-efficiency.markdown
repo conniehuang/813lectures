@@ -6,7 +6,7 @@ categories: lecture
 
 lecture-number: 5
 lecturer: ...
-sections: [Kinds of human error, Error prevention, Error recovery, Error messages]
+sections: [Chunking, Pointing and steering, Shortcuts, Keystroke level model]
 pdf: "L04/L04-efficiency.pdf"
 picoquiz: "http://courses.csail.mit.edu/6.831/2013/picoquiz?lectureId=4"
 ---
