@@ -138,7 +138,6 @@ blockquote {
 
 #notes {
   padding: 5% 7.5%;
-  overflow-y: scroll;
   margin: 0 auto;
   width: 59%; }
   #notes img {
