@@ -137,6 +137,7 @@ blockquote {
   position: fixed;
   height: 100%;
   padding: 0 3%;
+  display: none;
 
   .sidebar-contents{
     margin: 30px 0;
@@ -189,7 +190,7 @@ blockquote {
 #notes {
   padding: 5% 7.5%;
   overflow-y: scroll;
-  float: right;
+  margin: 0 auto;
   width: 59%;
 
   img {

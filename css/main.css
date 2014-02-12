@@ -1,211 +1,53 @@
-@media (max-width: 900px) {
-  header.lecture-header > div,
-  header.lecture-header > .lecture-info,
-  header.lecture-header > .lecture-buttons {
-    width: 100%;
-    max-width: 100%;
-    min-width: 100%; } }
-body {
-  font-family: 'Whitney A', 'Whitney B', 'Segoe UI', 'Helvetica', 'Arial', sans-serif;
-  font-weight: 400;
-  font-size: 1.2em;
-  line-height: 1.5em;
-  color: #37373c;
-  height: 100%; }
+/*
+Syntax error: Invalid CSS after "  display: none": expected ";", was ".sidebar-contents{"
+        on line 142 of css/main.scss
 
-* {
-  margin: 0;
-  padding: 0; }
+137:   position: fixed;
+138:   height: 100%;
+139:   padding: 0 3%;
+140:   display: none
+141: 
+142:   .sidebar-contents{
+143:     margin: 30px 0;
+144: 
+145:     .home {
+146:       color: white;
+147:       font-size: 1.5em;
 
-h1 {
-  font-size: 2em;
-  line-height: 1.5em;
-  margin: .5em 0; }
-
-h2 {
-  font-size: 1.5em;
-  line-height: 1.8em;
-  margin-top: 40px; }
-
-h3 {
-  font-size: 1.1em;
-  font-weight: 400; }
-
-h4 {
-  width: 80%;
-  font-size: 1.3em;
-  line-height: 1.5em;
-  text-align: center;
-  font-weight: normal;
-  margin: 1em auto;
-  padding: 1em 0;
-  color: #81818b; }
-  h4::before {
-    content: "";
-    display: block;
-    width: 100px;
-    margin: 0 auto 20px auto;
-    border-top: 2px solid #d1d1d4; }
-  h4::after {
-    content: "";
-    display: block;
-    width: 100px;
-    margin: 20px auto 0 auto;
-    border-bottom: 2px solid #d1d1d4; }
-
-p {
-  margin: 1em 0; }
-
-a {
-  color: inherit;
-  border-bottom: 1px solid #16cbb6;
-  text-decoration: none;
-  transition: all .5s;
-  -webkit-transition: all .5s;
-  /* TODO: visited links */ }
-  a:hover {
-    color: #16cbb6;
-    border-bottom: 1px solid #16cbb6; }
-
-.smallcaps {
-  font-family: 'Whitney SC A', 'Whitney SC B'; }
-
-a.button {
-  color: #fff;
-  background-color: #b4b4c8;
-  padding: 10px 20px;
-  border-radius: 5px;
-  font-family: 'Whitney SC A', 'Whitney SC B';
-  font-weight: 400;
-  display: block;
-  text-align: center;
-  margin: 10px 0;
-  border-bottom: 2px solid #9797b2;
-  transition: all .5s;
-  -webkit-transition: all .5s; }
-  a.button:hover {
-    background-color: #16cbb6;
-    border-bottom: 2px solid #119d8d; }
-  a.button i {
-    margin-left: 10px; }
-
-blockquote {
-  margin-left: 50px;
-  padding: 2px 30px; }
-
-.posts {
-  list-style-type: none;
-  margin-bottom: 2em; }
-
-#sidebar {
-  background-color: #282832;
-  overflow-y: scroll;
-  width: 20%;
-  position: fixed;
-  height: 100%;
-  padding: 0 3%; }
-  #sidebar .sidebar-contents {
-    margin: 30px 0; }
-    #sidebar .sidebar-contents .home {
-      color: white;
-      font-size: 1.5em;
-      font-weight: 600;
-      text-align: center; }
-    #sidebar .sidebar-contents a {
-      border-bottom: none;
-      /* TODO: add visited link state*/ }
-      #sidebar .sidebar-contents a:hover {
-        color: #119d8d;
-        /* TODO: change link hover color for gray links */ }
-    #sidebar .sidebar-contents li {
-      color: #16cbb6;
-      display: block;
-      padding: 10px;
-      font-size: 0.9em; }
-      #sidebar .sidebar-contents li.lecture {
-        margin-top: 20px; }
-      #sidebar .sidebar-contents li.lecture-section {
-        color: #b4b4c8;
-        padding: 0px 0px 0px 40px;
-        font-size: 0.8em; }
-      #sidebar .sidebar-contents li .lecture-name {
-        float: left; }
-      #sidebar .sidebar-contents li .date {
-        font-family: 'Whitney SC A', 'Whitney SC B';
-        float: right;
-        color: #606083; }
-
-#notes {
-  padding: 5% 7.5%;
-  overflow-y: scroll;
-  float: right;
-  width: 59%; }
-  #notes img {
-    display: block;
-    margin: 0 auto;
-    max-width: 100%; }
-
-header.lecture-header {
-  padding-bottom: 10px;
-  border-bottom: 1px solid #b4b4c8;
-  overflow-y: hidden; }
-  header.lecture-header h3 {
-    font-family: 'Whitney SC A', 'Whitney SC B';
-    color: #b4b4c8; }
-    header.lecture-header h3 .lecture-date {
-      float: right; }
-  header.lecture-header div {
-    width: 45%;
-    margin-right: 0; }
-  header.lecture-header .lecture-info {
-    float: left;
-    width: auto;
-    max-width: 70%; }
-  header.lecture-header .lecture-buttons {
-    float: right;
-    width: 30%;
-    min-width: 200px;
-    padding: 10px 0; }
-
-.slide {
-  counter-increment: section;
-  border: 1px solid #b4b4c8;
-  padding: 40px 50px 50px 50px;
-  width: 75%;
-  margin: 30px auto; }
-  .slide h1 {
-    color: #16cbb6;
-    font-size: 1.5em;
-    line-height: 1em; }
-  .slide .caption {
-    font-size: 0.8em;
-    font-style: italic;
-    line-height: 0.8em;
-    text-align: center; }
-  .slide ul > li > ul {
-    margin-left: 25px; }
-  .slide:after {
-    content: counter(section);
-    font-size: 0.8em;
-    float: right; }
-
-pre {
-  width: 90%;
-  overflow-x: scroll;
-  border: 1px solid #b4b4c8;
-  border-radius: 5px;
-  padding: 5%;
-  margin: 30px 0; }
-
-@media print {
-  #notes {
-    width: 100%;
-    display: block;
-    margin: 0;
-    padding: 0; }
-
-  .print-hide {
-    display: none; }
-
-  header.lecture-header {
-    padding-bottom: 40px; } }
+Backtrace:
+css/main.scss:142
+/Users/carolynz/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.14/lib/sass/scss/parser.rb:1147:in `expected'
+/Users/carolynz/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.14/lib/sass/scss/parser.rb:1085:in `expected'
+/Users/carolynz/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.14/lib/sass/scss/parser.rb:1080:in `tok!'
+/Users/carolynz/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.14/lib/sass/scss/parser.rb:586:in `block in declaration_or_ruleset'
+/Users/carolynz/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.14/lib/sass/scss/parser.rb:1123:in `call'
+/Users/carolynz/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.14/lib/sass/scss/parser.rb:1123:in `rethrow'
+/Users/carolynz/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.14/lib/sass/scss/parser.rb:592:in `declaration_or_ruleset'
+/Users/carolynz/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.14/lib/sass/scss/parser.rb:554:in `block_child'
+/Users/carolynz/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.14/lib/sass/scss/parser.rb:546:in `block_contents'
+/Users/carolynz/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.14/lib/sass/scss/parser.rb:535:in `block'
+/Users/carolynz/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.14/lib/sass/scss/parser.rb:529:in `ruleset'
+/Users/carolynz/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.14/lib/sass/scss/parser.rb:553:in `block_child'
+/Users/carolynz/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.14/lib/sass/scss/parser.rb:546:in `block_contents'
+/Users/carolynz/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.14/lib/sass/scss/parser.rb:82:in `stylesheet'
+/Users/carolynz/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.14/lib/sass/scss/parser.rb:27:in `parse'
+/Users/carolynz/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.14/lib/sass/engine.rb:342:in `_to_tree'
+/Users/carolynz/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.14/lib/sass/engine.rb:315:in `_render'
+/Users/carolynz/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.14/lib/sass/engine.rb:262:in `render'
+/Users/carolynz/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.14/lib/sass/plugin/compiler.rb:362:in `update_stylesheet'
+/Users/carolynz/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.14/lib/sass/plugin/compiler.rb:203:in `block in update_stylesheets'
+/Users/carolynz/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.14/lib/sass/plugin/compiler.rb:201:in `each'
+/Users/carolynz/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.14/lib/sass/plugin/compiler.rb:201:in `update_stylesheets'
+/Users/carolynz/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.14/lib/sass/plugin/compiler.rb:283:in `block in watch'
+/Users/carolynz/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.14/vendor/listen/lib/listen/multi_listener.rb:108:in `call'
+/Users/carolynz/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.14/vendor/listen/lib/listen/multi_listener.rb:108:in `on_change'
+/Users/carolynz/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.14/vendor/listen/lib/listen/multi_listener.rb:117:in `block in initialize_adapter'
+/Users/carolynz/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.14/vendor/listen/lib/listen/adapter.rb:198:in `call'
+/Users/carolynz/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.14/vendor/listen/lib/listen/adapter.rb:198:in `report_changes'
+/Users/carolynz/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.14/vendor/listen/lib/listen/adapter.rb:210:in `poll_changed_dirs'
+/Users/carolynz/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.14/vendor/listen/lib/listen/adapters/darwin.rb:38:in `block in start'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Syntax error: Invalid CSS after \"  display: none\": expected \";\", was \".sidebar-contents{\"\A         on line 142 of css/main.scss\A \A 137:   position: fixed;\A 138:   height: 100%;\A 139:   padding: 0 3%;\A 140:   display: none\A 141: \A 142:   .sidebar-contents{\A 143:     margin: 30px 0;\A 144: \A 145:     .home {\A 146:       color: white;\A 147:       font-size: 1.5em;"; }
