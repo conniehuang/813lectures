@@ -104,35 +104,37 @@ blockquote {
   width: 20%;
   position: fixed;
   height: 100%;
-  padding: 3%; }
-  #sidebar .home {
-    color: white;
-    font-size: 1.5em;
-    font-weight: 600;
-    text-align: center; }
-  #sidebar a {
-    border-bottom: none;
-    /* TODO: add visited link state*/ }
-    #sidebar a:hover {
-      color: #119d8d;
-      /* TODO: change link hover color for gray links */ }
-  #sidebar li {
-    color: #16cbb6;
-    display: block;
-    padding: 10px;
-    font-size: 0.9em; }
-    #sidebar li.lecture {
-      margin-top: 20px; }
-    #sidebar li.lecture-section {
-      color: #b4b4c8;
-      padding: 0px 0px 0px 40px;
-      font-size: 0.8em; }
-    #sidebar li .lecture-name {
-      float: left; }
-    #sidebar li .date {
-      font-family: 'Whitney SC A', 'Whitney SC B';
-      float: right;
-      color: #606083; }
+  padding: 0 3%; }
+  #sidebar .sidebar-contents {
+    margin: 30px 0; }
+    #sidebar .sidebar-contents .home {
+      color: white;
+      font-size: 1.5em;
+      font-weight: 600;
+      text-align: center; }
+    #sidebar .sidebar-contents a {
+      border-bottom: none;
+      /* TODO: add visited link state*/ }
+      #sidebar .sidebar-contents a:hover {
+        color: #119d8d;
+        /* TODO: change link hover color for gray links */ }
+    #sidebar .sidebar-contents li {
+      color: #16cbb6;
+      display: block;
+      padding: 10px;
+      font-size: 0.9em; }
+      #sidebar .sidebar-contents li.lecture {
+        margin-top: 20px; }
+      #sidebar .sidebar-contents li.lecture-section {
+        color: #b4b4c8;
+        padding: 0px 0px 0px 40px;
+        font-size: 0.8em; }
+      #sidebar .sidebar-contents li .lecture-name {
+        float: left; }
+      #sidebar .sidebar-contents li .date {
+        font-family: 'Whitney SC A', 'Whitney SC B';
+        float: right;
+        color: #606083; }
 
 #notes {
   padding: 5% 7.5%;

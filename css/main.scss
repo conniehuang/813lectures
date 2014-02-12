@@ -138,48 +138,52 @@ blockquote {
   width: 20%;
   position: fixed;
   height: 100%;
-  padding: 3%;
+  padding: 0 3%;
 
-  .home {
-    color: white;
-    font-size: 1.5em;
-    font-weight: 600;
-    text-align: center;
-  }
+  .sidebar-contents{
+    margin: 30px 0;
 
-  a { 
-    border-bottom: none;
-    /* TODO: add visited link state*/
-    &:hover {
-      color: darken($teal, 10%);
-      /* TODO: change link hover color for gray links */
-    }
-  }
-
-  li {
-    color: $teal;
-    display:block;
-    padding:10px;
-    font-size: 0.9em;
-
-    &.lecture {
-      margin-top: 20px;
+    .home {
+      color: white;
+      font-size: 1.5em;
+      font-weight: 600;
+      text-align: center;
     }
 
-    &.lecture-section {
-      color: $gray;
-      padding: 0px 0px 0px 40px; 
-      font-size: 0.8em;
+    a { 
+      border-bottom: none;
+      /* TODO: add visited link state*/
+      &:hover {
+        color: darken($teal, 10%);
+        /* TODO: change link hover color for gray links */
+      }
     }
 
-    .lecture-name {
-      float: left;
-    }
+    li {
+      color: $teal;
+      display:block;
+      padding:10px;
+      font-size: 0.9em;
 
-    .date {
-      font-family: 'Whitney SC A', 'Whitney SC B';
-      float: right;
-      color: darken($gray, 30%);
+      &.lecture {
+        margin-top: 20px;
+      }
+
+      &.lecture-section {
+        color: $gray;
+        padding: 0px 0px 0px 40px; 
+        font-size: 0.8em;
+      }
+
+      .lecture-name {
+        float: left;
+      }
+
+      .date {
+        font-family: 'Whitney SC A', 'Whitney SC B';
+        float: right;
+        color: darken($gray, 30%);
+      }
     }
   }
 }
