@@ -3,7 +3,7 @@ layout: lecture
 title: Efficiency
 date: 2014-02-14 18:58:36
 categories: lecture
-permalink: L04-efficiency
+permalink: L05-efficiency
 
 lecture-number: 5
 lecturer: ...
